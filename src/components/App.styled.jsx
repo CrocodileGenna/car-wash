@@ -62,7 +62,27 @@ export const SECTION = styled.section`
 export const INFO_DIV = styled.div`
   display: flex;
   flex-direction: column;
-  border-radi span {
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #d7d7d7;
+  span {
     color: green;
   }
+`;
+
+export const INFRAME = styled.iframe`
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid;
+  margin: 20px 0;
+`;
+
+// FOOTER
+export const FOOTER = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px -10px 5px -5px rgba(0, 0, 0, 0.1);
 `;
