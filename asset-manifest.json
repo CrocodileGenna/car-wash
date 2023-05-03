@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/car-wash/static/js/main.52f7e1ba.js",
+    "main.js": "/car-wash/static/js/main.125e2f97.js",
     "static/media/PikPng.com_bmw-png_297886.png": "/car-wash/static/media/PikPng.com_bmw-png_297886.e84f96c16faa6af693a4.png",
     "index.html": "/car-wash/index.html",
-    "main.52f7e1ba.js.map": "/car-wash/static/js/main.52f7e1ba.js.map"
+    "main.125e2f97.js.map": "/car-wash/static/js/main.125e2f97.js.map"
   },
   "entrypoints": [
-    "static/js/main.52f7e1ba.js"
+    "static/js/main.125e2f97.js"
   ]
 }
