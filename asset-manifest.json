@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/car-wash/static/js/main.52f7e1ba.js",
+    "static/media/PikPng.com_bmw-png_297886.png": "/car-wash/static/media/PikPng.com_bmw-png_297886.e84f96c16faa6af693a4.png",
+    "index.html": "/car-wash/index.html",
+    "main.52f7e1ba.js.map": "/car-wash/static/js/main.52f7e1ba.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.52f7e1ba.js"
+  ]
+}
