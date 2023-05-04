@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const GlobalStyle = styled.div`
   width: 100%;
   height: 100vh;
-  outline: 1px solid;
+  // outline: 1px solid;
 
   h1,
   h2,
@@ -24,11 +24,36 @@ export const GlobalStyle = styled.div`
 `;
 // HEADER
 export const HEADER = styled.header`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #343434;
+  z-index: 9999;
+`;
+
+export const UP_DIV = styled.div`
   display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #a9a8a88c;
-  padding: 10px;
+  padding: 5px 0;
+  width: 100%;
+`;
+
+export const NAV_UL = styled.ul`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+  box-shadow: 0px -3px 3px -2px rgb(255 255 255);
+  // color: #fff;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const LOGO = styled.img`
@@ -47,29 +72,18 @@ export const LOGO = styled.img`
   }
 `;
 
-export const TITLE_DIV = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 // SECTION
 export const SECTION = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0 0 0;
 `;
 export const INFO_DIV = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  border: 1px solid;
-  padding: 10px;
-  margin: 20px 0;
-  background-color: #d7d7d7;
-  span {
-    color: green;
-  }
+  align-items: center;
+  padding: 20px 40px;
 `;
 
 export const INFRAME = styled.iframe`
@@ -77,8 +91,24 @@ export const INFRAME = styled.iframe`
   border-radius: 10px;
   border: 1px solid;
   margin: 20px 0;
+  width: 300px;
+  height: 300px;
 `;
 
+export const MAP_IMG = styled.img`
+  display: flex;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 5px 0;
+  width: 200px;
+  background-color: black;
+  transition: all 0.4s ease 0s;
+
+  :hover,
+  :focus {
+    transform: scale(1.1);
+  }
+`;
 // FOOTER
 export const FOOTER = styled.footer`
   display: flex;
