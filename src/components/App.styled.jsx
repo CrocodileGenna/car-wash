@@ -31,6 +31,13 @@ export const HEADER = styled.header`
   color: #fff;
   background-color: #343434;
   z-index: 9999;
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #343434;
+    box-shadow: 0px -3px 3px -2px rgb(255 255 255);
+  }
 `;
 
 export const UP_DIV = styled.div`
@@ -40,6 +47,12 @@ export const UP_DIV = styled.div`
   align-items: center;
   padding: 5px 0;
   width: 100%;
+  h1 {
+    font-family: monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bolt;
+  }
 `;
 
 export const NAV_UL = styled.ul`
@@ -48,9 +61,11 @@ export const NAV_UL = styled.ul`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  box-shadow: 0px -3px 3px -2px rgb(255 255 255);
+  // box-shadow: 0px -3px 3px -2px rgb(255 255 255);
   // color: #fff;
-
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   li {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;

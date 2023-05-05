@@ -54,7 +54,7 @@ export function App() {
               </div>
             </li>
             <li>
-              <button>Кафе-бар.</button>
+              <button>Кафе-бар</button>
               <span></span>
               <div>
                 <p>Час роботи: 8:00 - 18:00.</p>
