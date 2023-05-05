@@ -43,16 +43,63 @@ export const UP_DIV = styled.div`
 `;
 
 export const NAV_UL = styled.ul`
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5px 0;
   width: 100%;
   box-shadow: 0px -3px 3px -2px rgb(255 255 255);
   // color: #fff;
 
-  a {
-    text-decoration: none;
+  li {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-radius: 20px;
+    button {
+      display: flex;
+      border: none;
+      padding: 5px 5px;
+      height: 100%;
+      color: #fff;
+      background-color: #343434;
+      transition: all 0.4s ease 0s;
+
+      :hover,
+      :focus {
+        color: #343434;
+        background-color: #fff;
+      }
+    }
+    // span {
+    //   width: 0;
+    //   height: 0;
+    //   border-top: 10px solid #fff;
+    //   border-left: 10px solid transparent;
+    //   border-right: 10px solid transparent;
+    // }
+    div {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      z-index: 1;
+      p {
+        font-size: 12px;
+        padding: 1px 0;
+        margin: 3px 0;
+        border-bottom: 1px solid #ffffff57;
+      }
+    }
+    :hover {
+      border: none;
+    }
+    :hover div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #343434;
+    }
   }
 `;
 
@@ -100,13 +147,15 @@ export const MAP_IMG = styled.img`
   border-radius: 5px;
   padding: 1px;
   margin: 5px 0;
-  width: 200px;
+  width: 100px;
   background-color: black;
   transition: all 0.4s ease 0s;
 
   :hover,
   :focus {
-    transform: scale(1.1);
+    // width: 200px;
+    padding: 0.5px;
+    transform: scale(2.4);
   }
 `;
 // FOOTER
