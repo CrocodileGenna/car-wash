@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/car-wash/static/js/main.643c57b1.js",
+    "main.js": "/car-wash/static/js/main.b6ec7589.js",
     "static/media/photo_2023-05-04_15-50-41.jpg": "/car-wash/static/media/photo_2023-05-04_15-50-41.a6a8e9438909e07f8d2e.jpg",
     "index.html": "/car-wash/index.html",
-    "main.643c57b1.js.map": "/car-wash/static/js/main.643c57b1.js.map"
+    "main.b6ec7589.js.map": "/car-wash/static/js/main.b6ec7589.js.map"
   },
   "entrypoints": [
-    "static/js/main.643c57b1.js"
+    "static/js/main.b6ec7589.js"
   ]
 }
