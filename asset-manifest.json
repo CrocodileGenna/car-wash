@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.js": "/car-wash/static/js/main.b6ec7589.js",
-    "static/media/photo_2023-05-04_15-50-41.jpg": "/car-wash/static/media/photo_2023-05-04_15-50-41.a6a8e9438909e07f8d2e.jpg",
+    "main.css": "/car-wash/static/css/main.acce2e5c.css",
+    "main.js": "/car-wash/static/js/main.e9ebf8da.js",
+    "static/media/fon_ing_header.jpg": "/car-wash/static/media/fon_ing_header.5840f3dc9d1232babadb.jpg",
+    "static/media/bmw-7822989_1280.webp": "/car-wash/static/media/bmw-7822989_1280.bb6734d554b35370392d.webp",
     "index.html": "/car-wash/index.html",
-    "main.b6ec7589.js.map": "/car-wash/static/js/main.b6ec7589.js.map"
+    "static/media/phone-svgrepo-com-min.svg": "/car-wash/static/media/phone-svgrepo-com-min.757e56dd4682592d958f00d6dc870b9d.svg",
+    "main.acce2e5c.css.map": "/car-wash/static/css/main.acce2e5c.css.map",
+    "main.e9ebf8da.js.map": "/car-wash/static/js/main.e9ebf8da.js.map"
   },
   "entrypoints": [
-    "static/js/main.b6ec7589.js"
+    "static/css/main.acce2e5c.css",
+    "static/js/main.e9ebf8da.js"
   ]
 }
