@@ -71,7 +71,7 @@ export const Header = () => {
                     ✖
                   </CLOSE_BUTTON>
                   <MODAL_INFO_P>
-                    <span> Ми находимось:</span>
+                    <span> Ми знаходимось:</span>
                     м.Павлоград, р-н ПШС,пр-к Шахтобудівників 5-А.
                     <br />
                     <span>( За Пенсійним Фондом )</span>
