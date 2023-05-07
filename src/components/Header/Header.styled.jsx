@@ -28,20 +28,21 @@ export const TITLE_DIV = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  width: 300px;
-  height: 100px;
+  width: 100%;
+  // width: 300px;
+  height: 110px;
   background-color: #000000b3;
   @media screen and (min-width: 460px) {
-    width: 400px;
+    // width: 400px;
     height: 120px;
   }
   @media screen and (min-width: 760px) {
-    width: 600px;
-    height: 130px;
+    // width: 600px;
+    height: 90px;
   }
   @media screen and (min-width: 1200px) {
-    width: 800px;
-    height: 140px;
+    // width: 800px;
+    height: 100px;
   }
 `;
 export const TITLE_INFO_DIV = styled.div`
