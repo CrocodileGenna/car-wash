@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/car-wash/static/css/main.acce2e5c.css",
-    "main.js": "/car-wash/static/js/main.00fae501.js",
+    "main.js": "/car-wash/static/js/main.d1f8c2c4.js",
     "static/media/fon_ing_header.jpg": "/car-wash/static/media/fon_ing_header.5840f3dc9d1232babadb.jpg",
     "index.html": "/car-wash/index.html",
     "static/media/phone-svgrepo-com-min.svg": "/car-wash/static/media/phone-svgrepo-com-min.757e56dd4682592d958f00d6dc870b9d.svg",
     "main.acce2e5c.css.map": "/car-wash/static/css/main.acce2e5c.css.map",
-    "main.00fae501.js.map": "/car-wash/static/js/main.00fae501.js.map"
+    "main.d1f8c2c4.js.map": "/car-wash/static/js/main.d1f8c2c4.js.map"
   },
   "entrypoints": [
     "static/css/main.acce2e5c.css",
-    "static/js/main.00fae501.js"
+    "static/js/main.d1f8c2c4.js"
   ]
 }
