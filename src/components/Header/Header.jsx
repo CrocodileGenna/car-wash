@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
   HEADER,
+  IMG_DIV,
   TITLE_DIV,
   TITLE_INFO_DIV,
   // LOGO,
@@ -29,6 +30,12 @@ export const Header = () => {
   }
   return (
     <HEADER>
+      <IMG_DIV>
+        <p>
+          ПАРКІНГ
+          <span>24/7</span>
+        </p>
+      </IMG_DIV>
       <TITLE_DIV>
         <TITLE_INFO_DIV>
           <div>
@@ -72,7 +79,7 @@ export const Header = () => {
                   </CLOSE_BUTTON>
                   <MODAL_INFO_P>
                     <span> Ми знаходимось:</span>
-                    м.Павлоград, р-н ПШС,пр-к Шахтобудівників 5-А.
+                    м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.
                     <br />
                     <span>( За Пенсійним Фондом )</span>
                   </MODAL_INFO_P>

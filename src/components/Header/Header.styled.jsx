@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import fon from './images/fon_ing_header.jpg';
-
+import img from './images/parcing_3.png';
 export const HEADER = styled.header`
   position: relative;
   display: flex;
@@ -23,26 +23,69 @@ export const HEADER = styled.header`
     height: 600px;
   }
 `;
+export const IMG_DIV = styled.div`
+  p {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 90%;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    font-family: monospace;
+    @media screen and (min-width: 460px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 760px) {
+      font-size: 22px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  width: 70px;
+  height: 70px;
+  background-image: url(${img});
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-width: 460px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media screen and (min-width: 760px) {
+    width: 120px;
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 140px;
+    height: 140px;
+  }
+`;
 // TITLE_DIV
 export const TITLE_DIV = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
-  // width: 300px;
-  height: 110px;
-  background-color: #000000b3;
+  height: 90px;
+  background-color: #000000e0;
   @media screen and (min-width: 460px) {
-    // width: 400px;
-    height: 120px;
+    height: 100px;
   }
   @media screen and (min-width: 760px) {
-    // width: 600px;
-    height: 90px;
+    height: 85px;
   }
   @media screen and (min-width: 1200px) {
-    // width: 800px;
-    height: 100px;
+    height: 95px;
   }
 `;
 export const TITLE_INFO_DIV = styled.div`
@@ -144,7 +187,13 @@ export const PHONE_P = styled.p`
 export const DOP_INFO_DIV = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 32px auto;
+  @media screen and (min-width: 760px) {
+    margin: 65px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 110px auto;
+  }
 `;
 export const DOP_DOP_INFO_DIV = styled.div`
   display: flex;
