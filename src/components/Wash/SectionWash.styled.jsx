@@ -1,22 +1,25 @@
 import styled from '@emotion/styled';
 export const SECTION = styled.section`
   h1 {
+    span {
+      color: red;
+    }
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
+    top: 2%;
     left: 0;
     width: 100%;
-    height: 25px;
-    font-size: 17px;
-    color: #fff;
-    background-color: #000000b3;
+    // height: 25px;
+    font-size: 20px;
+    // color: #fff;
+    // background-color: #000000b3;
   }
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 35px 15px;
   border-top: 1px solid #000000b3;
   border-bottom: 1px solid #000000b3;
   background-color: #00000021;

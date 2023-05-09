@@ -8,13 +8,13 @@ export const HEADER = styled.header`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url(${fon});
   background-size: cover;
   background-position: center;
 
   @media screen and (min-width: 460px) {
-    height: 420px;
+    height: 460px;
   }
   @media screen and (min-width: 760px) {
     height: 500px;
@@ -25,11 +25,21 @@ export const HEADER = styled.header`
 `;
 export const IMG_DIV = styled.div`
   p {
+    span {
+      font-family: cursive;
+      font-size: 14px;
+      @media screen and (min-width: 760px) {
+        font-size: 22px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+      }
+    }
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: center;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
@@ -50,8 +60,8 @@ export const IMG_DIV = styled.div`
     }
   }
   position: absolute;
-  bottom: 15%;
-  left: 20%;
+  top: 25%;
+  left: 5%;
   width: 70px;
   height: 70px;
   background-image: url(${img});
@@ -62,10 +72,12 @@ export const IMG_DIV = styled.div`
     height: 80px;
   }
   @media screen and (min-width: 760px) {
+    left: 8%;
     width: 120px;
     height: 120px;
   }
   @media screen and (min-width: 1200px) {
+    left: 15%;
     width: 140px;
     height: 140px;
   }
@@ -129,16 +141,16 @@ export const LOGO = styled.img`
 `;
 export const TITLE_TEXT_DIV = styled.div`
   p {
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     @media screen and (min-width: 460px) {
-      font-size: 17px;
+      font-size: 15px;
     }
     @media screen and (min-width: 760px) {
-      font-size: 20px;
+      font-size: 17px;
     }
     @media screen and (min-width: 1200px) {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   flex-direction: column;
@@ -187,12 +199,12 @@ export const PHONE_P = styled.p`
 export const DOP_INFO_DIV = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 32px auto;
-  @media screen and (min-width: 760px) {
-    margin: 65px auto;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 110px auto;
+  margin: auto;
+  // @media screen and (min-width: 760px) {
+  //   margin: 65px auto;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin: 110px auto;
   }
 `;
 export const DOP_DOP_INFO_DIV = styled.div`
@@ -215,7 +227,7 @@ export const DOP_INFO_P = styled.p`
   flex-direction: column;
   align-items: center;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 900;
   @media screen and (min-width: 760px) {
     font-size: 20px;
   }

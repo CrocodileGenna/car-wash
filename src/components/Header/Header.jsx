@@ -32,7 +32,7 @@ export const Header = () => {
     <HEADER>
       <IMG_DIV>
         <p>
-          ПАРКІНГ
+          паркінг
           <span>24/7</span>
         </p>
       </IMG_DIV>
@@ -42,7 +42,7 @@ export const Header = () => {
             {/* <LOGO src={logo} alt="logo" /> */}
             <TITLE_TEXT_DIV>
               <TITLE_H1>BUMER</TITLE_H1>
-              <p>автомийка</p>
+              <p>9⁰⁰-18⁰⁰. Без вихідних.</p>
             </TITLE_TEXT_DIV>
           </div>
           <div>

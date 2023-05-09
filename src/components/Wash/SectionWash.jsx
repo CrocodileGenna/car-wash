@@ -10,7 +10,10 @@ export const SectionWash = () => {
   return (
     <SECTION>
       <LOGO_1 src={logo} alt="logo" />
-      {/* <h1>Прайс автомийки</h1> */}
+      <h1>
+        <span>А</span>
+        втомийка
+      </h1>
       <WASH_DIV>
         <TITLE_H2>ВНУТРІШНЄ ТА ЗОВНІШНЄ ПРИБИРАННЯ</TITLE_H2>
         <TABLE>
