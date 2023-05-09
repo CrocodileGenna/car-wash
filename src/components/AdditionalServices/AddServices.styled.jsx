@@ -35,9 +35,10 @@ export const UL = styled.ul`
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+    width: 700px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 900px;
   }
 `;
 export const LI = styled.li`
@@ -47,25 +48,22 @@ export const LI = styled.li`
   margin: 10px;
   width: 250px;
   @media screen and (min-width: 460px) {
-    width: 320px;
+    width: 300px;
   }
   @media screen and (min-width: 760px) {
-    width: 350px;
+    width: 250px;
   }
 `;
 export const INFO_P = styled.p`
   font-family: system-ui;
   font-size: 15px;
-  padding: 5px;
+  margin: 0 0 10px 0;
   text-align: center;
   @media screen and (min-width: 460px) {
     font-size: 17px;
   }
   @media screen and (min-width: 760px) {
-    font-size: 19px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 export const IMG = styled.img`
