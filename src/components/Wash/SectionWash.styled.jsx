@@ -25,7 +25,7 @@ export const SECTION = styled.section`
   background-color: #00000021;
 
   @media screen and (min-width: 460px) {
-    padding: 40px 50px;
+    padding: 40px 20px;
   }
   @media screen and (min-width: 760px) {
     flex-direction: row;
@@ -69,15 +69,49 @@ export const WASH_DIV = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
+export const TITLE_DIV = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+export const TITLE_POSITION_DIV = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 export const TITLE_H2 = styled.h2`
   text-align: center;
-  margin: 10px 0 0 0;
-  font-size: 13px;
+  font-size: 15px;
   @media screen and (min-width: 760px) {
     font-size: 14px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 15px;
+  }
+`;
+export const TITLE_P = styled.p`
+  font-size: 9px;
+  color: #4c4c4c;
+`;
+export const TITLE_BLOCK_DIV = styled.div`
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 25px;
+  border-radius: 3px 6px 6px 3px;
+  background: #000000;
+  color: #ffffff;
+  :before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid #000000;
   }
 `;
 export const TABLE = styled.table`
