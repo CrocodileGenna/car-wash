@@ -42,7 +42,7 @@ export const Header = () => {
             {/* <LOGO src={logo} alt="logo" /> */}
             <TITLE_TEXT_DIV>
               <TITLE_H1>BUMER</TITLE_H1>
-              <p>9⁰⁰-18⁰⁰. Без вихідних.</p>
+              <p>Без вихідних: 9⁰⁰-18⁰⁰. </p>
             </TITLE_TEXT_DIV>
           </div>
           <div>

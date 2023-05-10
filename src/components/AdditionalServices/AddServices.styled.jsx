@@ -7,8 +7,8 @@ export const SECTION = styled.section`
   justify-content: flex-start;
   padding: 35px 15px;
   border-bottom: 1px solid #000000b3;
-  color: #fff;
-  background-color: #504e4e;
+  color: black;
+  background-color: #0000003d;
 `;
 export const TITLE_H2 = styled.h2`
   span {
@@ -29,7 +29,6 @@ export const UL = styled.ul`
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 10px;
-
   @media screen and (min-width: 760px) {
     flex-wrap: wrap;
     flex-direction: row;
@@ -45,13 +44,17 @@ export const LI = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   margin: 10px;
-  width: 250px;
+  width: 150px;
   @media screen and (min-width: 460px) {
-    width: 300px;
+    width: 170px;
+  }
+  @media screen and (min-width: 560px) {
+    width: 220px;
   }
   @media screen and (min-width: 760px) {
-    width: 250px;
+    width: 200px;
   }
 `;
 export const INFO_P = styled.p`
@@ -69,7 +72,7 @@ export const INFO_P = styled.p`
 export const IMG = styled.img`
   width: 100%;
   height: 100%;
-  min-height: 152px;
+  max-height: 120px;
   object-fit: cover;
   border-radius: 4px;
 `;
