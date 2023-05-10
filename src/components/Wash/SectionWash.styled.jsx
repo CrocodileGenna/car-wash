@@ -200,9 +200,9 @@ export const IMG_UL = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin: 20px 0 0 0;
   @media screen and (min-width: 760px) {
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
     flex-direction: row;
   }
 `;

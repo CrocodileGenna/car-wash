@@ -68,35 +68,15 @@ export const SectionWash = () => {
       </WASH_DIV>
       <IMG_UL>
         <li>
-          <IMG src={car_1} alt="" />
+          <IMG src={car_1} alt="car_1" />
         </li>
         <li>
-          <IMG src={car_2} alt="" />
+          <IMG src={car_2} alt="car_2" />
         </li>
         <li>
-          <IMG src={car_3} alt="" />
+          <IMG src={car_3} alt="car_3" />
         </li>
       </IMG_UL>
-      {/* <WASH_DIV>
-        <TITLE_H2>ДОДАТКОВІ ПОСЛУГИ</TITLE_H2>
-        <ul>
-          <li>
-            <p>Полірування фар</p>
-          
-            <p>ціна грн.</p>
-          </li>
-          <li>
-            <p>Полірування кузова авто</p>
-          
-            <p>ціна грн.</p>
-          </li>
-          <li>
-            <p>Відновлення фар</p>
-          
-            <p>ціна грн.</p>
-          </li>
-        </ul>
-      </WASH_DIV> */}
     </SECTION>
   );
 };
