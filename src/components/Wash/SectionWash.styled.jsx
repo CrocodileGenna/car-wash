@@ -180,7 +180,7 @@ export const IMG_UL = styled.ul`
     :hover,
     :focus {
       cursor: pointer;
-      transform: scale(1.02);
+      transform: scale(1.1);
     }
     @media screen and (min-width: 460px) {
       width: 250px;
