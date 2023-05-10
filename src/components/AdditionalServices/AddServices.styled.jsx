@@ -5,10 +5,12 @@ export const SECTION = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 35px 15px;
-  border-bottom: 1px solid #000000b3;
+  padding: 55px 15px;
+  border-top: 1px solid #00000069;
+  border-bottom: 1px solid #00000069;
   color: black;
-  background-color: #0000003d;
+
+  background: #dddcdd;
 `;
 export const TITLE_H2 = styled.h2`
   span {
@@ -18,16 +20,16 @@ export const TITLE_H2 = styled.h2`
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 1%;
+  top: 3%;
   left: 0;
   width: 100%;
   font-size: 20px;
 `;
 export const UL = styled.ul`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
   padding: 0 10px;
   @media screen and (min-width: 760px) {
     flex-wrap: wrap;
@@ -44,17 +46,20 @@ export const LI = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 10px;
-  width: 150px;
+  width: 120px;
   @media screen and (min-width: 460px) {
-    width: 170px;
+    width: 150px;
   }
   @media screen and (min-width: 560px) {
     width: 220px;
   }
   @media screen and (min-width: 760px) {
     width: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 250px;
   }
 `;
 export const INFO_P = styled.p`
@@ -71,8 +76,19 @@ export const INFO_P = styled.p`
 `;
 export const IMG = styled.img`
   width: 100%;
-  height: 100%;
-  max-height: 120px;
+  height: 110px;
   object-fit: cover;
   border-radius: 4px;
+  @media screen and (min-width: 460px) {
+    height: 120px;
+  }
+  @media screen and (min-width: 560px) {
+    height: 130px;
+  }
+  @media screen and (min-width: 760px) {
+    height: 140px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 150px;
+  }
 `;

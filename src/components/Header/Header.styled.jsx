@@ -300,7 +300,7 @@ export const MODAL_DIV = styled.div`
 `;
 export const CLOSE_BUTTON = styled.button`
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 7px;
   border: none;
   font-size: 20px;
@@ -358,4 +358,5 @@ export const IFRAME = styled.iframe`
   height: 100%;
   border: 1px solid;
   border-radius: 5px;
+  margin: 24px 0 0 0;
 `;

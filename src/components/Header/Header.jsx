@@ -77,18 +77,17 @@ export const Header = () => {
                   >
                     ✖
                   </CLOSE_BUTTON>
-                  <MODAL_INFO_P>
-                    <span> Ми знаходимось:</span>
-                    м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.
-                    <br />
-                    <span>( За Пенсійним Фондом )</span>
-                  </MODAL_INFO_P>
                   <IFRAME
                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1526.4167695934116!2d35.84117605652344!3d48.52673426017807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stranslate!5e0!3m2!1suk!2sua!4v1683456114716!5m2!1suk!2sua"
                     title="map"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                   ></IFRAME>
+                  <MODAL_INFO_P>
+                    м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.
+                    <br />
+                    <span>( За Пенсійним Фондом )</span>
+                  </MODAL_INFO_P>
                 </MODAL_DIV>
               </BACKDROP_DIV>
             </>

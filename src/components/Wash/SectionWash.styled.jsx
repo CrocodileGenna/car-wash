@@ -8,7 +8,7 @@ export const SECTION = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 1%;
+    top: 3%;
     left: 0;
     width: 100%;
     font-size: 20px;
@@ -17,10 +17,8 @@ export const SECTION = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 15px;
-  border-top: 1px solid #000000b3;
-  border-bottom: 1px solid #000000b3;
-  background-color: #00000017;
+  padding: 45px 15px;
+  border-top: 1px solid #00000069;
 
   @media screen and (min-width: 460px) {
     padding: 40px 20px;
@@ -32,12 +30,11 @@ export const SECTION = styled.section`
 `;
 export const LOGO_1 = styled.img`
   position: absolute;
-  border-radius: 5px;
   top: 0%;
   left: 0%;
   width: 100%;
   max-height: 100%;
-  opacity: 0.1;
+  opacity: 0.15;
   z-index: -1;
   transition: all 0.3s ease 0s;
   // @media screen and (min-width: 460px) {
@@ -221,7 +218,6 @@ export const IMG_UL = styled.ul`
 `;
 export const IMG = styled.img`
   display: block;
-  border: 1px solid;
   border-radius: 5px;
   width: 100%;
   max-height: 125px;
