@@ -8,6 +8,7 @@ import {
   TITLE_P,
   TEXT_P,
   IFRAME,
+  BOTTOM_INFO_P,
 } from './Footer.styled';
 import nav from './images/nav.svg';
 import phone from './images/phone.svg';
@@ -24,23 +25,34 @@ export const Footer = () => {
         <INFO_UL>
           <INFO_LI>
             <IMG src={nav} alt="nav" />
-            <TITLE_P>Адреса:</TITLE_P>
-            <TEXT_P>м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.</TEXT_P>
+            <div>
+              <TITLE_P>Адреса:</TITLE_P>
+              <TEXT_P>
+                м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.(за Пенсійним
+                Фондом)
+              </TEXT_P>
+            </div>
           </INFO_LI>
           <INFO_LI>
-            <IMG src={phone} alt="" />
-            <TITLE_P>Телефони:</TITLE_P>
-            <TEXT_P>-0-0-0-0</TEXT_P>
+            <IMG src={phone} alt="phone" />
+            <div>
+              <TITLE_P>Телефони:</TITLE_P>
+              <TEXT_P>-0-0-0-0</TEXT_P>
+            </div>
           </INFO_LI>
           <INFO_LI>
-            <IMG src={email} alt="" />
-            <TITLE_P>Електронна пошта:</TITLE_P>
-            <TEXT_P>asdasd@asdas</TEXT_P>
+            <IMG src={email} alt="email" />
+            <div>
+              <TITLE_P>Електронна пошта:</TITLE_P>
+              <TEXT_P>asdasd@asdas</TEXT_P>
+            </div>
           </INFO_LI>
           <INFO_LI>
-            <IMG src={time} alt="" />
-            <TITLE_P>Час роботи:</TITLE_P>
-            <TEXT_P>Без вихідних: 9⁰⁰-18⁰⁰.</TEXT_P>
+            <IMG src={time} alt="time" />
+            <div>
+              <TITLE_P>Час роботи:</TITLE_P>
+              <TEXT_P>Без вихідних: 9⁰⁰-18⁰⁰.</TEXT_P>
+            </div>
           </INFO_LI>
         </INFO_UL>
         <IFRAME
@@ -50,7 +62,7 @@ export const Footer = () => {
           referrerpolicy="no-referrer-when-downgrade"
         ></IFRAME>
       </FOOTER_INFO_DIV>
-      <p>Copyright © 2022. Усі права захищені</p>
+      <BOTTOM_INFO_P>Copyright © 2022. Усі права захищені</BOTTOM_INFO_P>
     </FOOTER>
   );
 };

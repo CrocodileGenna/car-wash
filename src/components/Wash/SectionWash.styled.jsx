@@ -4,28 +4,22 @@ export const SECTION = styled.section`
     span {
       color: red;
     }
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 3%;
-    left: 0;
     width: 100%;
-    font-size: 20px;
+    // font-size: 20px;
+    font-weight: 800;
   }
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 45px 15px;
+  padding: 20px 15px;
   border-top: 1px solid #00000069;
 
-  @media screen and (min-width: 460px) {
-    padding: 40px 20px;
-  }
   @media screen and (min-width: 760px) {
-  }
-  @media screen and (min-width: 1200px) {
+    padding: 40px 20px;
   }
 `;
 export const LOGO_1 = styled.img`
@@ -34,27 +28,8 @@ export const LOGO_1 = styled.img`
   left: 0%;
   width: 100%;
   max-height: 100%;
-  opacity: 0.15;
+  opacity: 0.25;
   z-index: -1;
-  transition: all 0.3s ease 0s;
-  // @media screen and (min-width: 460px) {
-  //   width: 140px;
-  // }
-  // @media screen and (min-width: 760px) {
-  //   top: 30px;
-  //   left: 82%;
-  //   width: 110px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   top: 35%;
-  //   left: 45%;
-  //   width: 145px;
-  // }
-  // @media screen and (min-width: 1400px) {
-  //   top: 35%;
-  //   left: 45%;
-  //   width: 180px;
-  // }
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -77,13 +52,11 @@ export const TITLE_POSITION_DIV = styled.div`
 export const TITLE_H2 = styled.h2`
   text-align: center;
   font-size: 16px;
-  @media screen and (min-width: 460px) {
-  }
   @media screen and (min-width: 760px) {
-    font-size: 18px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 20px;
+    font-size: 24px;
   }
 `;
 export const TITLE_P = styled.p`
@@ -180,17 +153,30 @@ export const PRICE_NAME_P = styled.p`
   font-size: 14px;
   font-weight: 600;
   color: black;
+  @media screen and (min-width: 760px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 `;
 export const PRICE_PRICE_P = styled.p`
   font-size: 14px;
   text-align: right;
   font-weight: 600;
   color: black;
+  @media screen and (min-width: 760px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 `;
 export const IMG_UL = styled.ul`
   li {
     margin: 5px;
     width: 200px;
+    height: 100px;
     transition: all 0.3s ease 0s;
     :hover,
     :focus {
@@ -199,20 +185,25 @@ export const IMG_UL = styled.ul`
     }
     @media screen and (min-width: 460px) {
       width: 250px;
+      height: 120px;
     }
     @media screen and (min-width: 760px) {
-      width: 210px;
+      margin: 10px;
+      width: 200px;
+      height: 200px;
     }
     @media screen and (min-width: 1200px) {
-      width: 300px;
+      margin: 25px;
+      width: 350px;
+      height: 300px;
     }
   }
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0 0 0;
 
   @media screen and (min-width: 760px) {
+    margin: 20px 0 0 0;
     flex-direction: row;
   }
 `;
@@ -220,11 +211,6 @@ export const IMG = styled.img`
   display: block;
   border-radius: 5px;
   width: 100%;
-  max-height: 125px;
-  @media screen and (min-width: 760px) {
-    max-height: 100px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-height: 150px;
-  }
+  height: 100%;
+  object-fit: cover;
 `;

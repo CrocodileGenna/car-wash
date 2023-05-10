@@ -5,25 +5,25 @@ export const SECTION = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 55px 15px;
+  padding: 35px 15px;
   border-top: 1px solid #00000069;
   border-bottom: 1px solid #00000069;
   color: black;
 
   background: #dddcdd;
+  @media screen and (min-width: 760px) {
+    padding: 40px 20px;
+  }
 `;
 export const TITLE_H2 = styled.h2`
   span {
     color: red;
   }
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 3%;
-  left: 0;
   width: 100%;
-  font-size: 20px;
+  font-weight: 800;
 `;
 export const UL = styled.ul`
   display: flex;

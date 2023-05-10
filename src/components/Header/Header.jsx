@@ -20,6 +20,7 @@ import {
   IFRAME,
 } from './Header.styled';
 import phone from './images/phone-svgrepo-com-min.svg';
+// import nav from './images/nav.svg';
 // import logo from './images/bmw-7822989_1280.webp';
 export const Header = () => {
   const [openInfo, setOpenInfo] = useState(false);
@@ -84,6 +85,8 @@ export const Header = () => {
                     referrerpolicy="no-referrer-when-downgrade"
                   ></IFRAME>
                   <MODAL_INFO_P>
+                    {/* <img src={nav} alt="nav" /> */}
+                    <div></div>
                     м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.
                     <br />
                     <span>( За Пенсійним Фондом )</span>
