@@ -5,6 +5,9 @@ import { Footer } from './Footer/Footer';
 import { UP_BUTTON } from './App.styled';
 
 export const App = () => {
+  const scrollUp = () => {
+    document.documentElement.scrollTop = 0;
+  };
   const scrollToTopButton = document.getElementById('scrollToTopButton');
   window.onscroll = function () {
     if (
@@ -15,9 +18,6 @@ export const App = () => {
     } else {
       scrollToTopButton.style.display = 'none';
     }
-  };
-  const scrollUp = () => {
-    document.documentElement.scrollTop = 0;
   };
   return (
     <>
