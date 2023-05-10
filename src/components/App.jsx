@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react';
 export const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   const handleScroll = () => {
-    const scrollTop = window.onscroll || document.documentElement.onscroll;
-    setIsVisible(scrollTop > 20);
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsVisible(scrollTop > 300);
   };
   const scrollToTop = () => {
     window.scrollTo({
@@ -27,12 +27,14 @@ export const App = () => {
       <SectionWash />
       <AddSerwices />
       <Footer />
-      <UP_BUTTON
-        className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
-        onClick={scrollToTop}
-      >
-        ⇑
-      </UP_BUTTON>
+      {isVisible && (
+        <UP_BUTTON
+          className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
+          onClick={scrollToTop}
+        >
+          ⇑
+        </UP_BUTTON>
+      )}
     </>
   );
 };
