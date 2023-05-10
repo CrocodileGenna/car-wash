@@ -28,7 +28,7 @@ export const LOGO_1 = styled.img`
   left: 0%;
   width: 100%;
   max-height: 100%;
-  opacity: 0.25;
+  opacity: 0.15;
   z-index: -1;
 `;
 export const WASH_DIV = styled.div`
@@ -61,7 +61,8 @@ export const TITLE_H2 = styled.h2`
 `;
 export const TITLE_P = styled.p`
   font-size: 9px;
-  color: #4c4c4c;
+  color: red;
+  // color: red;
   @media screen and (min-width: 460px) {
     font-size: 9px;
   }
@@ -152,7 +153,6 @@ export const PRICE_LI = styled.li`
 export const PRICE_NAME_P = styled.p`
   font-size: 14px;
   font-weight: 600;
-  color: black;
   @media screen and (min-width: 760px) {
     font-size: 16px;
   }
@@ -164,7 +164,6 @@ export const PRICE_PRICE_P = styled.p`
   font-size: 14px;
   text-align: right;
   font-weight: 600;
-  color: black;
   @media screen and (min-width: 760px) {
     font-size: 16px;
   }
