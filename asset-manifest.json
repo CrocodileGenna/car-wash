@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car-wash/static/css/main.acce2e5c.css",
-    "main.js": "/car-wash/static/js/main.bf4437d2.js",
+    "main.js": "/car-wash/static/js/main.a82346ed.js",
     "static/media/fon_ing_header.jpg": "/car-wash/static/media/fon_ing_header.5840f3dc9d1232babadb.jpg",
     "static/media/car_2.jpeg": "/car-wash/static/media/car_2.484e3d4c89749a582605.jpeg",
     "static/media/car_3.jpeg": "/car-wash/static/media/car_3.52d982b8ca9a1c6593f7.jpeg",
@@ -18,10 +18,10 @@
     "static/media/time.svg": "/car-wash/static/media/time.651390b043f42a1fd79aefb8e36abf5d.svg",
     "static/media/phone-svgrepo-com-min.svg": "/car-wash/static/media/phone-svgrepo-com-min.757e56dd4682592d958f00d6dc870b9d.svg",
     "main.acce2e5c.css.map": "/car-wash/static/css/main.acce2e5c.css.map",
-    "main.bf4437d2.js.map": "/car-wash/static/js/main.bf4437d2.js.map"
+    "main.a82346ed.js.map": "/car-wash/static/js/main.a82346ed.js.map"
   },
   "entrypoints": [
     "static/css/main.acce2e5c.css",
-    "static/js/main.bf4437d2.js"
+    "static/js/main.a82346ed.js"
   ]
 }
