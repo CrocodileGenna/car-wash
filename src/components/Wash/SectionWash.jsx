@@ -16,16 +16,16 @@ import {
   PRICE_PRICE_P,
   IMG_UL,
   IMG,
-  // LOGO_1,
+  LOGO_1,
 } from './SectionWash.styled';
-// import logo from './images/Karcher-Black-Logo.webp';
+import logo from './images/Karcher-Black-Logo.webp';
 import car_1 from './images/car_1.jpeg';
 import car_2 from './images/car_2.jpeg';
 import car_3 from './images/car_3.jpeg';
 export const SectionWash = () => {
   return (
     <SECTION>
-      {/* <LOGO_1 src={logo} alt="logo" /> */}
+      <LOGO_1 src={logo} alt="logo" />
       <h1>
         <span>А</span>
         втомийка

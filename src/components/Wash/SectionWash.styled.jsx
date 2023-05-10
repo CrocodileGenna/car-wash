@@ -11,10 +11,7 @@ export const SECTION = styled.section`
     top: 1%;
     left: 0;
     width: 100%;
-    // height: 25px;
     font-size: 20px;
-    // color: #fff;
-    // background-color: #000000b3;
   }
   position: relative;
   display: flex;
@@ -23,7 +20,7 @@ export const SECTION = styled.section`
   padding: 35px 15px;
   border-top: 1px solid #000000b3;
   border-bottom: 1px solid #000000b3;
-  background-color: #00000021;
+  background-color: #00000017;
 
   @media screen and (min-width: 460px) {
     padding: 40px 20px;
@@ -36,32 +33,31 @@ export const SECTION = styled.section`
 export const LOGO_1 = styled.img`
   position: absolute;
   border-radius: 5px;
-  top: 35%;
-  left: 65%;
-  width: 100px;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.1;
+  z-index: -1;
   transition: all 0.3s ease 0s;
-  :hover,
-  :focus {
-    transform: scale(1.1);
-  }
-  @media screen and (min-width: 460px) {
-    width: 140px;
-  }
-  @media screen and (min-width: 760px) {
-    top: 30px;
-    left: 82%;
-    width: 110px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 35%;
-    left: 45%;
-    width: 145px;
-  }
-  @media screen and (min-width: 1400px) {
-    top: 35%;
-    left: 45%;
-    width: 180px;
-  }
+  // @media screen and (min-width: 460px) {
+  //   width: 140px;
+  // }
+  // @media screen and (min-width: 760px) {
+  //   top: 30px;
+  //   left: 82%;
+  //   width: 110px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   top: 35%;
+  //   left: 45%;
+  //   width: 145px;
+  // }
+  // @media screen and (min-width: 1400px) {
+  //   top: 35%;
+  //   left: 45%;
+  //   width: 180px;
+  // }
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -127,11 +123,6 @@ export const TITLE_BLOCK_DIV = styled.div`
     border-bottom: 20px solid transparent;
     border-right: 25px solid #000000;
   }
-  :hover,
-  :focus {
-    cursor: pointer;
-    transform: scale(1.04);
-  }
 `;
 export const SUPP_DIV = styled.div`
   position: relative;
@@ -178,24 +169,26 @@ export const PRICE_LI = styled.li`
   justify-content: space-between;
   margin: 2px 0;
   padding: 1px;
-  border-bottom: 1px solid #00000040;
+  border-bottom: 1px solid #00000094;
   transition: all 0.3s ease 0s;
   :hover,
   :focus {
     cursor: pointer;
     transform: scale(1.04);
     color: red;
+    border-bottom: 1px solid red;
   }
 `;
 export const PRICE_NAME_P = styled.p`
   font-size: 14px;
-  color: #334455;
+  font-weight: 600;
+  color: black;
 `;
 export const PRICE_PRICE_P = styled.p`
   font-size: 14px;
   text-align: right;
   font-weight: 600;
-  color: #334455;
+  color: black;
 `;
 export const IMG_UL = styled.ul`
   li {
