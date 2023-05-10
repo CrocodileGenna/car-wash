@@ -309,6 +309,7 @@ export const CLOSE_BUTTON = styled.button`
 
   :hover,
   :focus {
+    color: red;
     transform: scale(1.1);
   }
   @media screen and (min-width: 460px) {

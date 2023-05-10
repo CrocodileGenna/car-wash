@@ -20,8 +20,6 @@ import {
   IFRAME,
 } from './Header.styled';
 import phone from './images/phone-svgrepo-com-min.svg';
-// import nav from './images/nav.svg';
-// import logo from './images/bmw-7822989_1280.webp';
 export const Header = () => {
   const [openInfo, setOpenInfo] = useState(false);
   if (openInfo === true) {

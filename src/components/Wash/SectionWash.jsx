@@ -22,7 +22,13 @@ import logo from './images/Karcher-Black-Logo.webp';
 import car_1 from './images/car_1.jpeg';
 import car_2 from './images/car_2.jpeg';
 import car_3 from './images/car_3.jpeg';
-export const SectionWash = () => {
+
+export const SectionWash = ({ clickImg, open, close }) => {
+  const chengeImg = e => {
+    clickImg(e.target.src);
+    open(true);
+    close(true);
+  };
   return (
     <SECTION>
       <LOGO_1 src={logo} alt="logo" />
@@ -68,13 +74,13 @@ export const SectionWash = () => {
       </WASH_DIV>
       <IMG_UL>
         <li>
-          <IMG src={car_1} alt="car_1" />
+          <IMG onClick={chengeImg} src={car_1} alt="car_1" />
         </li>
         <li>
-          <IMG src={car_2} alt="car_2" />
+          <IMG onClick={chengeImg} src={car_2} alt="car_2" />
         </li>
         <li>
-          <IMG src={car_3} alt="car_3" />
+          <IMG onClick={chengeImg} src={car_3} alt="car_3" />
         </li>
       </IMG_UL>
     </SECTION>
