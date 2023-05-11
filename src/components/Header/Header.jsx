@@ -20,15 +20,16 @@ import {
   IFRAME,
 } from './Header.styled';
 import phone from './images/phone-svgrepo-com-min.svg';
-import fon_1 from './images/fon_ing_header.jpg';
+import fon_1 from './images/fon_1.jpg';
 import fon_2 from './images/fon_2.jpg';
 import fon_3 from './images/fon_3.jpg';
 import fon_4 from './images/fon_4.jpg';
+import fon_5 from './images/fon_5.jpg';
 
 export const Header = () => {
   const [openInfo, setOpenInfo] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [fon_1, fon_2, fon_3, fon_4];
+  const images = [fon_1, fon_2, fon_3, fon_4, fon_5];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,10 +72,7 @@ export const Header = () => {
       </TITLE_DIV>
       <DOP_INFO_DIV>
         <DOP_DOP_INFO_DIV>
-          <DOP_INFO_P>
-            ДЕ НАС ЗНАЙТИ
-            <span>↧</span>
-          </DOP_INFO_P>
+          <DOP_INFO_P>↧ ДЕ НАС ЗНАЙТИ ↧{/* <span>↧</span> */}</DOP_INFO_P>
           <INFO_BUTTON onClick={() => setOpenInfo(true)}>Відкрити</INFO_BUTTON>
           {openInfo && (
             <>

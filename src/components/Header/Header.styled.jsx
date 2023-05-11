@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-// import fon from './images/fon_ing_header.jpg';
+
 import img from './images/parcing_3.png';
 export const HEADER = styled.header`
   position: relative;
@@ -215,21 +215,26 @@ export const DOP_DOP_INFO_DIV = styled.div`
   flex-direction: column;
 `;
 export const DOP_INFO_P = styled.p`
-  span {
-    font-weight: bold;
-    font-size: 20px;
-    @media screen and (min-width: 760px) {
-      font-size: 25px;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 30px;
-    }
-  }
+  // span {
+  //   font-weight: bold;
+  //   font-size: 20px;
+  //   @media screen and (min-width: 760px) {
+  //     font-size: 25px;
+  //   }
+  //   @media screen and (min-width: 1200px) {
+  //     font-size: 30px;
+  //   }
+  // }
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 10px 0;
+  padding: 2px;
+  border: 1px solid red;
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 900;
+  background-color: #fff;
   @media screen and (min-width: 760px) {
     font-size: 20px;
   }

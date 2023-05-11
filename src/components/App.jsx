@@ -41,6 +41,7 @@ export const App = () => {
   } else {
     document.body.style.overflow = 'visible';
   }
+
   return (
     <>
       <Header />
