@@ -229,9 +229,9 @@ export const DOP_INFO_P = styled.p`
   flex-direction: column;
   align-items: center;
   margin: 0 0 10px 0;
-  padding: 2px;
+  padding: 0px 10px;
   border: 1px solid red;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 15px;
   font-weight: 900;
   background-color: #fff;

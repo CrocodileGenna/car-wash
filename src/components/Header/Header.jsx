@@ -72,7 +72,7 @@ export const Header = () => {
       </TITLE_DIV>
       <DOP_INFO_DIV>
         <DOP_DOP_INFO_DIV>
-          <DOP_INFO_P>↧ ДЕ НАС ЗНАЙТИ ↧{/* <span>↧</span> */}</DOP_INFO_P>
+          <DOP_INFO_P> ↧ ДЕ НАС ЗНАЙТИ ↧ {/* <span>↧</span> */}</DOP_INFO_P>
           <INFO_BUTTON onClick={() => setOpenInfo(true)}>Відкрити</INFO_BUTTON>
           {openInfo && (
             <>
