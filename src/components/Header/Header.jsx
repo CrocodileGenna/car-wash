@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   HEADER,
   IMG_DIV,
@@ -20,15 +20,34 @@ import {
   IFRAME,
 } from './Header.styled';
 import phone from './images/phone-svgrepo-com-min.svg';
+import fon_1 from './images/fon_ing_header.jpg';
+import fon_2 from './images/fon_2.jpg';
+import fon_3 from './images/fon_3.jpg';
+import fon_4 from './images/fon_4.jpg';
+
 export const Header = () => {
   const [openInfo, setOpenInfo] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [fon_1, fon_2, fon_3, fon_4];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [setCurrentImageIndex, images.length]);
+  const backgroundImage = `url(${images[currentImageIndex]})`;
+
+  // ---
   if (openInfo === true) {
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = 'visible';
   }
+
   return (
-    <HEADER>
+    <HEADER prop={{ backgroundImage }}>
       <IMG_DIV>
         <p>
           паркінг

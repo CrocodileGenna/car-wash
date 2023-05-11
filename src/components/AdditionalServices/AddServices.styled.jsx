@@ -49,6 +49,14 @@ export const LI = styled.li`
   justify-content: space-between;
   margin: 10px;
   width: 120px;
+  transition: all 0.3s ease 0s;
+  :hover,
+  :focus {
+    cursor: pointer;
+    border-radius: 4px;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
+  }
   @media screen and (min-width: 460px) {
     width: 150px;
   }
@@ -79,12 +87,6 @@ export const IMG = styled.img`
   height: 110px;
   object-fit: cover;
   border-radius: 4px;
-  transition: all 0.3s ease 0s;
-  :hover,
-  :focus {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
   @media screen and (min-width: 460px) {
     height: 120px;
   }

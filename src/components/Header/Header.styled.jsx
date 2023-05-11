@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import fon from './images/fon_ing_header.jpg';
+// import fon from './images/fon_ing_header.jpg';
 import img from './images/parcing_3.png';
 export const HEADER = styled.header`
   position: relative;
@@ -9,7 +9,9 @@ export const HEADER = styled.header`
   align-items: center;
   width: 100%;
   height: 450px;
-  background-image: url(${fon});
+  background-image: ${e => {
+    return e.prop.backgroundImage;
+  }};
   background-size: cover;
   background-position: center;
 
