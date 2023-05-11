@@ -23,11 +23,10 @@ import car_1 from './images/car_1.jpeg';
 import car_2 from './images/car_2.jpeg';
 import car_3 from './images/car_3.jpeg';
 
-export const SectionWash = ({ clickImg, open, close }) => {
+export const SectionWash = ({ clickImg, open }) => {
   const chengeImg = e => {
     clickImg(e.target.src);
     open(true);
-    close(true);
   };
   return (
     <SECTION>
