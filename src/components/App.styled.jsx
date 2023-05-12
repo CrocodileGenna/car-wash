@@ -4,7 +4,7 @@ export const UP_BUTTON = styled.button`
   display: flex;
   bottom: 80px;
   right: 20px;
-  width: 20px;
+  width: 40px;
   height: 40px;
   align-items: center;
   justify-content: center;
