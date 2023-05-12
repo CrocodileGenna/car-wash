@@ -15,8 +15,8 @@ export const SECTION = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 15px;
-  border-top: 1px solid #00000069;
+  padding: 35px 15px;
+  // border-top: 1px solid #00000069;
 
   @media screen and (min-width: 760px) {
     padding: 40px 20px;
@@ -25,11 +25,15 @@ export const SECTION = styled.section`
 export const LOGO_1 = styled.img`
   position: absolute;
   top: 0%;
-  left: 0%;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 100%;
   max-height: 100%;
-  opacity: 0.15;
+  opacity: 0.25;
   z-index: -1;
+  @media screen and (min-width: 760px) {
+    max-width: 1000px;
+  }
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -209,7 +213,28 @@ export const IMG_UL = styled.ul`
 export const IMG = styled.img`
   display: block;
   border-radius: 5px;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease 0s;
+  :hover,
+  :focus {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  @media screen and (min-width: 460px) {
+    width: 150px;
+    height: 120px;
+  }
+  @media screen and (min-width: 760px) {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 25px;
+    width: 350px;
+    height: 300px;
+  }
 `;

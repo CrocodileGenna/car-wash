@@ -1,13 +1,14 @@
-import { SECTION, TITLE_H2, IMG } from './AddServices.styled';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import stove from './images/stove.jpg';
-import chassis from './images/chassis.jpg';
-export const AddSerwices = ({ clickImg, open }) => {
+import { SECTION, TITLE_H2, IMG, IMG_DIV } from './Parcing.styled';
+import car_1 from './images/car_1.jpeg';
+import car_2 from './images/car_2.jpeg';
+import car_3 from './images/car_3.jpeg';
+export const Parcing = ({ clickImg, open }) => {
   const chengeImg = e => {
     clickImg(e.target.src);
     open(true);
@@ -15,11 +16,16 @@ export const AddSerwices = ({ clickImg, open }) => {
   return (
     <>
       <SECTION>
+        <IMG_DIV>
+          <p>
+            місяць
+            <span>500грн</span>
+          </p>
+        </IMG_DIV>
         <TITLE_H2>
-          <span>Х</span>
-          імчистка
+          <span>П</span>аркінг
         </TITLE_H2>
-        <p>килимів</p>
+        <p>20 грн. за добу</p>
       </SECTION>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -30,25 +36,25 @@ export const AddSerwices = ({ clickImg, open }) => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={chassis} alt="chassis" />
+          <IMG onClick={chengeImg} src={car_1} alt="car_1" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={chassis} alt="chassis" />
+          <IMG onClick={chengeImg} src={car_2} alt="car_2" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={chassis} alt="chassis" />
+          <IMG onClick={chengeImg} src={car_3} alt="car_3" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={chassis} alt="chassis" />
+          <IMG onClick={chengeImg} src={car_1} alt="car_1" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={stove} alt="stove" />
+          <IMG onClick={chengeImg} src={car_2} alt="car_2" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={stove} alt="stove" />
+          <IMG onClick={chengeImg} src={car_3} alt="car_3" />
         </SwiperSlide>
       </Swiper>
-      <SECTION></SECTION>
+      {/* <SECTION></SECTION> */}
     </>
   );
 };

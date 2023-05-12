@@ -5,6 +5,7 @@ import { Footer } from './Footer/Footer';
 import { Modal } from './ModalImg/Modal';
 import { UP_BUTTON } from './App.styled';
 import { useEffect, useState } from 'react';
+import { Parcing } from './Parcing/Parcing';
 
 export const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +47,8 @@ export const App = () => {
     <>
       <Header />
       <SectionWash clickImg={clickImages} open={openImages} />
-      <AddSerwices />
+      <Parcing clickImg={clickImages} open={openImages} />
+      <AddSerwices clickImg={clickImages} open={openImages} />
       <Footer />
       {isVisible && (
         <UP_BUTTON

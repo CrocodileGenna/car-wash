@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 import img from './images/parcing_3.png';
+
 export const HEADER = styled.header`
   position: relative;
   display: flex;
