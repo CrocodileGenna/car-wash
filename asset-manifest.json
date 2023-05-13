@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car-wash/static/css/main.69415c0f.css",
-    "main.js": "/car-wash/static/js/main.eba9b2e8.js",
+    "main.js": "/car-wash/static/js/main.381ea9f4.js",
     "static/media/fon_4.jpg": "/car-wash/static/media/fon_4.68ed91130214e2fd7fef.jpg",
     "static/media/fon_2.jpg": "/car-wash/static/media/fon_2.ca1db8eab981d3e90d1d.jpg",
     "static/media/fon_1.jpg": "/car-wash/static/media/fon_1.51b576dbe3a9ef17c269.jpg",
@@ -10,7 +10,6 @@
     "static/media/fon_5.jpg": "/car-wash/static/media/fon_5.bdeadc34047cbd3913f5.jpg",
     "static/media/car_3.jpeg": "/car-wash/static/media/car_3.52d982b8ca9a1c6593f7.jpeg",
     "static/media/car_1.jpeg": "/car-wash/static/media/car_1.cf4af85a1fa8442adf8f.jpeg",
-    "static/media/stove.jpg": "/car-wash/static/media/stove.766ac7c0c9505b544668.jpg",
     "static/media/parcing_3.png": "/car-wash/static/media/parcing_3.908d4643e57d29670732.png",
     "static/media/Karcher-Black-Logo.webp": "/car-wash/static/media/Karcher-Black-Logo.3e1f3568ffbe24032261.webp",
     "static/media/email.svg": "/car-wash/static/media/email.514133f60a234825a1e95aa5b5ac772f.svg",
@@ -20,10 +19,10 @@
     "static/media/time.svg": "/car-wash/static/media/time.651390b043f42a1fd79aefb8e36abf5d.svg",
     "static/media/phone-svgrepo-com-min.svg": "/car-wash/static/media/phone-svgrepo-com-min.757e56dd4682592d958f00d6dc870b9d.svg",
     "main.69415c0f.css.map": "/car-wash/static/css/main.69415c0f.css.map",
-    "main.eba9b2e8.js.map": "/car-wash/static/js/main.eba9b2e8.js.map"
+    "main.381ea9f4.js.map": "/car-wash/static/js/main.381ea9f4.js.map"
   },
   "entrypoints": [
     "static/css/main.69415c0f.css",
-    "static/js/main.eba9b2e8.js"
+    "static/js/main.381ea9f4.js"
   ]
 }
