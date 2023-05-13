@@ -229,18 +229,20 @@ export const DOP_INFO_P = styled.p`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
   margin: 0 0 10px 0;
   padding: 0px 10px;
-  border: 1px solid red;
   border-radius: 5px;
-  font-size: 15px;
-  font-weight: 900;
-  background-color: #fff;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  // font-weight: 900;
+  color: #fff;
+  background-color: #000000ba;
   @media screen and (min-width: 760px) {
-    font-size: 20px;
+    font-size: 15px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 25px;
+    font-size: 17px;
   }
 `;
 export const INFO_BUTTON = styled.button`
