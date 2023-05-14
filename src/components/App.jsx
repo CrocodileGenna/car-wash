@@ -1,9 +1,9 @@
 import { Header } from 'components/Header/Header';
 import { SectionWash } from './Wash/SectionWash';
-import { AddSerwices } from './AdditionalServices/AddServices';
+import { Cleaner } from './Cleaner/Cleaner';
 import { Footer } from './Footer/Footer';
 import { Modal } from './ModalImg/Modal';
-import { UP_BUTTON } from './App.styled';
+import { UP_BUTTON, POSITION_DIV } from './App.styled';
 import { useEffect, useState } from 'react';
 import { Parcing } from './Parcing/Parcing';
 
@@ -47,8 +47,10 @@ export const App = () => {
     <>
       <Header />
       <SectionWash clickImg={clickImages} open={openImages} />
-      <Parcing clickImg={clickImages} open={openImages} />
-      <AddSerwices clickImg={clickImages} open={openImages} />
+      <POSITION_DIV>
+        <Parcing clickImg={clickImages} open={openImages} />
+        <Cleaner clickImg={clickImages} open={openImages} />
+      </POSITION_DIV>
       <Footer />
       {isVisible && (
         <UP_BUTTON

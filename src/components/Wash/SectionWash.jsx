@@ -80,10 +80,10 @@ export const SectionWash = ({ clickImg, open }) => {
       </SECTION>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={10}
         slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
+        // navigation
+        // pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>

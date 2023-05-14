@@ -6,7 +6,7 @@ export const SECTION = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 35px 15px;
+  padding: 15px 15px 0 15px;
   //   border-top: 1px solid #00000069;
   // border-bottom: 1px solid #00000069;
   color: black;
@@ -25,31 +25,36 @@ export const TITLE_H2 = styled.h2`
   width: 100%;
   font-weight: 800;
 `;
+export const TITLE_P = styled.p`
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 0 10px 0;
+`;
 export const IMG = styled.img`
   display: block;
   border-radius: 5px;
   object-fit: cover;
   margin: 5px;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   transition: all 0.3s ease 0s;
   :hover,
   :focus {
     cursor: pointer;
-    transform: scale(1.1);
+    // transform: scale(1.05);
   }
   @media screen and (min-width: 460px) {
-    width: 150px;
-    height: 120px;
+    width: 260px;
+    height: 160px;
   }
   @media screen and (min-width: 760px) {
     margin: 10px;
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
   @media screen and (min-width: 1200px) {
     margin: 25px;
-    width: 350px;
+    width: 450px;
     height: 300px;
   }
 `;
@@ -58,11 +63,11 @@ export const IMG_DIV = styled.div`
     span {
       font-family: cursive;
       font-size: 14px;
-      @media screen and (min-width: 760px) {
-        font-size: 22px;
-      }
+      // @media screen and (min-width: 760px) {
+      //   font-size: 20px;
+      // }
       @media screen and (min-width: 1200px) {
-        font-size: 26px;
+        font-size: 20px;
       }
     }
     display: flex;
@@ -82,11 +87,11 @@ export const IMG_DIV = styled.div`
     @media screen and (min-width: 460px) {
       font-size: 14px;
     }
-    @media screen and (min-width: 760px) {
-      font-size: 22px;
-    }
+    // @media screen and (min-width: 760px) {
+    //   font-size: 20px;
+    // }
     @media screen and (min-width: 1200px) {
-      font-size: 26px;
+      font-size: 20px;
     }
   }
   position: absolute;
@@ -102,13 +107,13 @@ export const IMG_DIV = styled.div`
     height: 80px;
   }
   @media screen and (min-width: 760px) {
-    left: 80%;
-    width: 120px;
-    height: 120px;
+    top: 5%;
+    left: 70%;
+    // width: 100px;
+    // height: 100px;
   }
   @media screen and (min-width: 1200px) {
-    // left: 80%;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
   }
 `;

@@ -216,29 +216,31 @@ export const DOP_DOP_INFO_DIV = styled.div`
   flex-direction: column;
 `;
 export const DOP_INFO_P = styled.p`
-  // span {
-  //   font-weight: bold;
-  //   font-size: 20px;
-  //   @media screen and (min-width: 760px) {
-  //     font-size: 25px;
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     font-size: 30px;
-  //   }
-  // }
+  span {
+    font-weight: 100;
+    // font-size: 20px;
+    // @media screen and (min-width: 760px) {
+    //   font-size: 25px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   font-size: 30px;
+    // }
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  max-width: 300px;
   margin: 0 0 10px 0;
-  padding: 0px 10px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   font-size: 12px;
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
-  // font-weight: 900;
   color: #fff;
   background-color: #000000ba;
+  z-index: 9;
   @media screen and (min-width: 760px) {
+    max-width: 500px;
     font-size: 15px;
   }
   @media screen and (min-width: 1200px) {
@@ -276,7 +278,7 @@ export const BACKDROP_DIV = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;

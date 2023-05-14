@@ -37,7 +37,7 @@ export const Footer = () => {
             <IMG src={phone} alt="phone" />
             <div>
               <TITLE_P>Телефони:</TITLE_P>
-              <TEXT_P>-0-0-0-0</TEXT_P>
+              <TEXT_P>+380-95-259-30-77</TEXT_P>
             </div>
           </INFO_LI>
           <INFO_LI>

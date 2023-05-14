@@ -24,16 +24,13 @@ export const SECTION = styled.section`
 `;
 export const LOGO_1 = styled.img`
   position: absolute;
-  top: 0%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   max-width: 100%;
-  max-height: 100%;
+  // max-height: 100%;
   opacity: 0.25;
   z-index: -1;
-  @media screen and (min-width: 760px) {
-    max-width: 1000px;
-  }
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -221,7 +218,7 @@ export const IMG = styled.img`
   :hover,
   :focus {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   @media screen and (min-width: 460px) {
     width: 150px;

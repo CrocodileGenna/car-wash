@@ -1,4 +1,11 @@
 import styled from '@emotion/styled';
+export const POSITION_DIV = styled.div`
+  display: block;
+  @media screen and (min-width: 760px) {
+    display: flex;
+    justify-content: space-around;
+  }
+`;
 export const UP_BUTTON = styled.button`
   position: fixed;
   display: flex;

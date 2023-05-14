@@ -1,7 +1,13 @@
-import { SECTION, TITLE_H2, IMG } from './AddServices.styled';
+import {
+  SECTION,
+  TITLE_H2,
+  TITLE_P,
+  POSITION_IMG,
+  IMG,
+} from './Cleaner.styled';
 
 import chassis from './images/chassis.jpg';
-export const AddSerwices = ({ clickImg, open }) => {
+export const Cleaner = ({ clickImg, open }) => {
   const chengeImg = e => {
     clickImg(e.target.src);
     open(true);
@@ -13,11 +19,11 @@ export const AddSerwices = ({ clickImg, open }) => {
           <span>Х</span>
           імчистка
         </TITLE_H2>
-        <p>килимів</p>
-        <div>
+        <TITLE_P>килимів</TITLE_P>
+        <POSITION_IMG>
           <IMG onClick={chengeImg} src={chassis} alt="chassis" />
           <IMG onClick={chengeImg} src={chassis} alt="chassis" />
-        </div>
+        </POSITION_IMG>
       </SECTION>
     </>
   );
