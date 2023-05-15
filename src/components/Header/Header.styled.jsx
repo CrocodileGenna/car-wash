@@ -87,12 +87,16 @@ export const IMG_DIV = styled.div`
 `;
 // TITLE_DIV
 export const TITLE_DIV = styled.div`
+  position: fixed;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 90px;
   background-color: #000000e0;
+  z-index: 99999;
+  transition: transform 0.3s ease;
+
   @media screen and (min-width: 460px) {
     height: 100px;
   }
@@ -110,6 +114,7 @@ export const TITLE_INFO_DIV = styled.div`
     align-items: center;
     padding: 4px;
   }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,7 +207,8 @@ export const PHONE_P = styled.p`
 export const DOP_INFO_DIV = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: auto ;
+  margin-top: 200px;
   // @media screen and (min-width: 760px) {
   //   margin: 65px auto;
   // }

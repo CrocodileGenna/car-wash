@@ -19,6 +19,7 @@ import {
   MODAL_INFO_P,
   IFRAME,
 } from './Header.styled';
+import './Header.css';
 import phone from './images/phone-svgrepo-com-min.svg';
 import fon_1 from './images/fon_1.jpg';
 import fon_2 from './images/fon_2.jpg';
@@ -29,7 +30,26 @@ import fon_5 from './images/fon_5.jpg';
 export const Header = () => {
   const [openInfo, setOpenInfo] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
   const images = [fon_1, fon_2, fon_3, fon_4, fon_5];
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      setVisible(
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 0) ||
+          currentScrollPos < 10
+      );
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +75,7 @@ export const Header = () => {
           <span>24/7</span>
         </p>
       </IMG_DIV>
-      <TITLE_DIV>
+      <TITLE_DIV className={`header ${visible ? '' : 'hidden'}`}>
         <TITLE_INFO_DIV>
           <div>
             {/* <LOGO src={logo} alt="logo" /> */}

@@ -15,22 +15,30 @@ export const SECTION = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 15px;
+  padding: 35px 15px 0 15px;
   // border-top: 1px solid #00000069;
 
   @media screen and (min-width: 760px) {
-    padding: 40px 20px;
+    padding: 40px 20px 0 20px;
   }
 `;
 export const LOGO_1 = styled.img`
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  // max-height: 100%;
-  opacity: 0.25;
-  z-index: -1;
+  top: 65%;
+  left: 60%;
+  border-radius: 5px;
+  width: 100px;
+  @media screen and (min-width: 460px) {
+    width: 120px;
+  }
+  @media screen and (min-width: 760px) {
+    top: 55%;
+    width: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 54%;
+    width: 200px;
+  }
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -106,7 +114,7 @@ export const SUPP_DIV = styled.div`
   color: #ffffff;
   :after {
     content: '';
-    background-color: white;
+    background-color: #d3d3d3;
     border-radius: 50%;
     width: 8px;
     height: 8px;
@@ -134,42 +142,52 @@ export const BOTTOM_P = styled.p`
   right: 5%;
 `;
 export const PRICE_UL = styled.ul`
-  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // width: 85%;
 `;
 export const PRICE_LI = styled.li`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 2px 0;
-  padding: 1px;
-  border-bottom: 1px solid #00000094;
   transition: all 0.3s ease 0s;
   :hover,
   :focus {
     cursor: pointer;
     transform: scale(1.04);
     color: red;
-    border-bottom: 1px solid red;
+    // border-bottom: 1px solid red;
   }
 `;
 export const PRICE_NAME_P = styled.p`
   font-size: 14px;
   font-weight: 600;
+  padding: 1px;
+  border-bottom: 1px solid #00000094;
   @media screen and (min-width: 760px) {
     font-size: 16px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 18px;
+  }
+  :hover,
+  :focus {
+    cursor: pointer;
+    // transform: scale(1.01);
+    color: red;
+    border-bottom: 1px solid red;
   }
 `;
-export const PRICE_PRICE_P = styled.p`
-  font-size: 14px;
+export const PRICE_PRICE_IMG = styled.img`
+  width: 20px;
+  margin: 0 5px 0 0;
   text-align: right;
-  font-weight: 600;
   @media screen and (min-width: 760px) {
-    font-size: 16px;
+    width: 24px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 18px;
+    width: 26px;
   }
 `;
 export const IMG_UL = styled.ul`

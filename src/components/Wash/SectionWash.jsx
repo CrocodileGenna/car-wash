@@ -19,14 +19,18 @@ import {
   PRICE_UL,
   PRICE_LI,
   PRICE_NAME_P,
-  PRICE_PRICE_P,
+  PRICE_PRICE_IMG,
   IMG,
   LOGO_1,
 } from './SectionWash.styled';
 import logo from './images/Karcher-Black-Logo.webp';
-import car_1 from './images/car_1.jpeg';
-import car_2 from './images/car_2.jpeg';
-import car_3 from './images/car_3.jpeg';
+import check from './images/check-svgrepo-com.svg';
+import wash_6 from './images/wash_6.jpg';
+import wash_5 from './images/wash_5.jpg';
+import wash_1 from './images/wash_1.jpg';
+import wash_2 from './images/wash_2.jpg';
+import wash_3 from './images/wash_3.jpg';
+import wash_4 from './images/wash_4.jpg';
 
 export const SectionWash = ({ clickImg, open }) => {
   const chengeImg = e => {
@@ -60,21 +64,21 @@ export const SectionWash = ({ clickImg, open }) => {
 
           <PRICE_UL>
             <PRICE_LI>
+              <PRICE_PRICE_IMG src={check} alt="check" />
               <PRICE_NAME_P>Безконтактне миття</PRICE_NAME_P>
-              <PRICE_PRICE_P>ціна грн.</PRICE_PRICE_P>
             </PRICE_LI>
             <PRICE_LI>
+              <PRICE_PRICE_IMG src={check} alt="check" />
               <PRICE_NAME_P>Контактне миття</PRICE_NAME_P>
-              <PRICE_PRICE_P>ціна грн.</PRICE_PRICE_P>
-            </PRICE_LI>
-            {/* <PRICE_LI>
-              <PRICE_NAME_P>Ручне миття</PRICE_NAME_P>
-              <PRICE_PRICE_P>ціна грн.</PRICE_PRICE_P>
             </PRICE_LI>
             <PRICE_LI>
+              <PRICE_PRICE_IMG src={check} alt="check" />
+              <PRICE_NAME_P>Ручне миття</PRICE_NAME_P>
+            </PRICE_LI>
+            <PRICE_LI>
+              <PRICE_PRICE_IMG src={check} alt="check" />
               <PRICE_NAME_P>Суха автомийка</PRICE_NAME_P>
-              <PRICE_PRICE_P>ціна грн.</PRICE_PRICE_P>
-            </PRICE_LI> */}
+            </PRICE_LI>
           </PRICE_UL>
         </WASH_DIV>
       </SECTION>
@@ -87,25 +91,25 @@ export const SectionWash = ({ clickImg, open }) => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_1} alt="car_1" />
+          <IMG onClick={chengeImg} src={wash_6} alt="wash_6" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_2} alt="car_2" />
+          <IMG onClick={chengeImg} src={wash_5} alt="wash_5" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_3} alt="car_3" />
+          <IMG onClick={chengeImg} src={wash_1} alt="wash_1" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_1} alt="car_1" />
+          <IMG onClick={chengeImg} src={wash_2} alt="wash_2" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_2} alt="car_2" />
+          <IMG onClick={chengeImg} src={wash_4} alt="wash_4" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={car_3} alt="car_3" />
+          <IMG onClick={chengeImg} src={wash_3} alt="wash_3" />
         </SwiperSlide>
       </Swiper>
-      {/* <SECTION></SECTION> */}
+      <br />
     </>
   );
 };

@@ -4,6 +4,7 @@ import { Cleaner } from './Cleaner/Cleaner';
 import { Footer } from './Footer/Footer';
 import { Modal } from './ModalImg/Modal';
 import { UP_BUTTON, POSITION_DIV } from './App.styled';
+import arrow_top from './img/arrow-top-svgrepo-com.svg';
 import { useEffect, useState } from 'react';
 import { Parcing } from './Parcing/Parcing';
 
@@ -57,7 +58,7 @@ export const App = () => {
           className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
           onClick={scrollToTop}
         >
-          ⇑
+          <img src={arrow_top} alt="arrow_top" />
         </UP_BUTTON>
       )}
       {openImg && <Modal img={img} close={closeImages} />}
