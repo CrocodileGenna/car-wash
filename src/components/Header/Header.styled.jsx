@@ -206,22 +206,54 @@ export const PHONE_P = styled.p`
 export const INPUT_DIV = styled.div`
   p {
     text-align: center;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
+    @media screen and (min-width: 460px) {
+      font-size: 10px;
+    }
+    @media screen and (min-width: 760px) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: 25%;
-  left: 40%;
+  right: 5%;
   padding: 10px;
   border-radius: 5px;
   max-width: 200px;
   background-color: #ffffffc2;
+  @media screen and (min-width: 460px) {
+    right: 15%;
+    max-width: 230px;
+  }
+  @media screen and (min-width: 760px) {
+    top: 55%;
+    right: 0;
+    left: 10%;
+    max-width: 260px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 20%;
+    max-width: 300px;
+  }
 `;
 export const INPUT_INFO_DIV = styled.div`
-  max-width: 200px;
+  width: 180px;
+  @media screen and (min-width: 460px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 760px) {
+    width: 240px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 280px;
+  }
 `;
 export const INPUT_INFO_POSITION_DIV = styled.div`
   display: flex;
@@ -231,6 +263,12 @@ export const INPUT_INFO_POSITION_DIV = styled.div`
 export const INPUT_INFO_LABEL = styled.label`
   width: 15px;
   margin: 0 3px 0 0;
+  @media screen and (min-width: 760px) {
+    width: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 20px;
+  }
 `;
 export const INPUT_INFO_IMG = styled.img`
   width: 100%;
@@ -244,6 +282,12 @@ export const INPUT_INFO_INPUT = styled.input`
   background-color: #fff;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease 0s;
+  @media screen and (min-width: 760px) {
+    height: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 30px;
+  }
   :hover,
   :focus {
     color: black;
@@ -261,6 +305,21 @@ export const INPUT_INFO_BUTTON = styled.button`
   color: #fff;
   background-color: red;
   transition: all 0.3s ease 0s;
+  @media screen and (min-width: 460px) {
+    margin: 12px 0 0 0;
+    padding: 8px 23px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 760px) {
+    margin: 15px 0 0 0;
+    padding: 9px 25px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 15px 0 5px 0;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
   :hover,
   :focus {
     // outline: 1px solid;
@@ -293,12 +352,29 @@ export const INFO_BUTTON = styled.button`
     background-color: #fff;
   }
   @media screen and (min-width: 760px) {
-    padding: 12px 30px;
-    font-size: 20px;
+    display: none;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 14px 35px;
+  //   font-size: 22px;
+  // }
+`;
+export const IFRAME_DESCTOP = styled.iframe`
+  display: none;
+  @media screen and (min-width: 760px) {
+    position: absolute;
+    display: flex;
+    top: 20%;
+    right: 5%;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 14px 35px;
-    font-size: 22px;
+    top: 20%;
+    right: 15%;
+    width: 450px;
+    height: 450px;
   }
 `;
 // MODAL
@@ -395,6 +471,7 @@ export const MODAL_INFO_P = styled.p`
     font-size: 17px;
   }
 `;
+
 // DOP_INFO_DIV
 export const DOP_INFO_DIV = styled.div`
   display: flex;
