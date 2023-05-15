@@ -7,6 +7,9 @@ import 'swiper/css/scrollbar';
 import {
   SECTION,
   WASH_DIV,
+  TITLE_TEXT_DIV,
+  TITLE_ICON_IMG,
+  TITLE_H1,
   TITLE_DIV,
   TITLE_POSITION_DIV,
   SUPP_DIV,
@@ -23,6 +26,7 @@ import {
   IMG,
   LOGO_1,
 } from './SectionWash.styled';
+import svg_icon from './images/car-wash-svgrepo-com (2).svg';
 import logo from './images/Karcher-Black-Logo.webp';
 import check from './images/check-svgrepo-com.svg';
 import wash_6 from './images/wash_6.jpg';
@@ -41,10 +45,13 @@ export const SectionWash = ({ clickImg, open }) => {
     <>
       <SECTION>
         <LOGO_1 src={logo} alt="logo" />
-        <h1>
-          <span>А</span>
-          втомийка
-        </h1>
+        <TITLE_TEXT_DIV>
+          <TITLE_ICON_IMG src={svg_icon} alt="svg_icon" />
+          <TITLE_H1>
+            <span>А</span>
+            втомийка
+          </TITLE_H1>
+        </TITLE_TEXT_DIV>
         <WASH_DIV>
           <TITLE_DIV>
             <TITLE_POSITION_DIV>

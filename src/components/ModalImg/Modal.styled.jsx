@@ -27,7 +27,7 @@ export const MODAL_DIV = styled.div`
     min-width: 640px;
   }
   @media screen and (min-width: 1200px) {
-    min-width: 940px;
+    min-width: 840px;
   }
 `;
 export const CLOSE_BUTTON = styled.button`
@@ -57,5 +57,7 @@ export const CLOSE_BUTTON = styled.button`
 export const IMG = styled.img`
   border-radius: 5px;
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
   z-index: 9999;
 `;

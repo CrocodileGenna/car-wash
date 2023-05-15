@@ -14,7 +14,20 @@ export const SECTION = styled.section`
     padding: 40px 20px;
   }
 `;
-export const TITLE_H2 = styled.h2`
+export const TITLE_TEXT_DIV = styled.div`
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  display: flex;
+  margin: 0 0 10px 0;
+`;
+export const TITLE_ICON_IMG = styled.img`
+  width: 45px;
+  margin: 0 20px 0 0;
+`;
+export const TITLE_H1 = styled.h1`
   span {
     color: red;
   }

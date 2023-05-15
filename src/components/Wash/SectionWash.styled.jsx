@@ -1,25 +1,17 @@
 import styled from '@emotion/styled';
 export const SECTION = styled.section`
-  h1 {
-    span {
-      color: red;
-    }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    // font-size: 20px;
-    font-weight: 800;
-  }
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 15px 0 15px;
-  // border-top: 1px solid #00000069;
+  padding: 35px 15px 10px 15px;
 
   @media screen and (min-width: 760px) {
-    padding: 40px 20px 0 20px;
+    align-items: flex-start;
+    padding: 40px 160px 10px 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 200px 10px 200px;
   }
 `;
 export const LOGO_1 = styled.img`
@@ -32,13 +24,33 @@ export const LOGO_1 = styled.img`
     width: 120px;
   }
   @media screen and (min-width: 760px) {
-    top: 55%;
-    width: 160px;
+    top: 56%;
+    left: 50%;
+    width: 220px;
   }
   @media screen and (min-width: 1200px) {
-    top: 54%;
-    width: 200px;
+    top: 14%;
+    left: 60%;
+    width: 400px;
   }
+`;
+export const TITLE_TEXT_DIV = styled.div`
+  display: flex;
+  margin: 0 0 10px 0;
+`;
+export const TITLE_ICON_IMG = styled.img`
+  width: 50px;
+  margin: 0 20px 0 0;
+`;
+export const TITLE_H1 = styled.h1`
+  span {
+    color: red;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 800;
 `;
 export const WASH_DIV = styled.div`
   display: flex;
@@ -190,68 +202,39 @@ export const PRICE_PRICE_IMG = styled.img`
     width: 26px;
   }
 `;
-export const IMG_UL = styled.ul`
-  li {
-    margin: 5px;
-    width: 200px;
-    height: 100px;
-    transition: all 0.3s ease 0s;
-    :hover,
-    :focus {
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    @media screen and (min-width: 460px) {
-      width: 250px;
-      height: 120px;
-    }
-    @media screen and (min-width: 760px) {
-      margin: 10px;
-      width: 200px;
-      height: 200px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin: 25px;
-      width: 350px;
-      height: 300px;
-    }
-  }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0 0 0;
-  @media screen and (min-width: 760px) {
-    margin: 40px 0 0 0;
-    flex-direction: row;
-  }
-`;
 export const IMG = styled.img`
   display: block;
+  margin: 5px 0 15px 10px;
   border-radius: 5px;
   object-fit: cover;
-  margin: 5px;
   width: 100px;
   height: 100px;
   transition: all 0.3s ease 0s;
   :hover,
   :focus {
     cursor: pointer;
-
     transform: scale(1.01);
-    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.4);
   }
   @media screen and (min-width: 460px) {
+    margin: 10px 0 20px 30px;
     width: 150px;
     height: 120px;
   }
   @media screen and (min-width: 760px) {
-    margin: 10px;
+    margin: 10px 0 20px 20px;
     width: 200px;
     height: 200px;
   }
+  @media screen and (min-width: 900px) {
+    margin: 10px 0 20px 60px;
+  }
   @media screen and (min-width: 1200px) {
-    margin: 25px;
+    margin: 10px 0 25px 40px;
     width: 350px;
     height: 300px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin: 10px 0 25px 60px;
   }
 `;

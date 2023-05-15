@@ -2,6 +2,7 @@ import { Header } from 'components/Header/Header';
 import { SectionWash } from './Wash/SectionWash';
 import { Cleaner } from './Cleaner/Cleaner';
 import { Footer } from './Footer/Footer';
+import { CafeBar } from './CafeBar/CafeBar';
 import { Modal } from './ModalImg/Modal';
 import { UP_BUTTON, POSITION_DIV } from './App.styled';
 import arrow_top from './img/arrow-top-svgrepo-com.svg';
@@ -52,6 +53,7 @@ export const App = () => {
         <Parcing clickImg={clickImages} open={openImages} />
         <Cleaner clickImg={clickImages} open={openImages} />
       </POSITION_DIV>
+      <CafeBar clickImg={clickImages} open={openImages} />
       <Footer />
       {isVisible && (
         <UP_BUTTON

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import img from './images/parcing_3.png';
+import img from './images/parking_3.png';
 export const SECTION = styled.section`
   position: relative;
   display: flex;
@@ -7,15 +7,21 @@ export const SECTION = styled.section`
   align-items: center;
   justify-content: flex-start;
   padding: 15px 15px 0 15px;
-  //   border-top: 1px solid #00000069;
-  // border-bottom: 1px solid #00000069;
   color: black;
   // background: #dddcdd;
   @media screen and (min-width: 760px) {
     padding: 40px 20px;
   }
 `;
-export const TITLE_H2 = styled.h2`
+export const TITLE_TEXT_DIV = styled.div`
+  display: flex;
+  margin: 0 0 10px 0;
+`;
+export const TITLE_ICON_IMG = styled.img`
+  width: 50px;
+  margin: 0 0 0 20px;
+`;
+export const TITLE_H1 = styled.h1`
   span {
     color: red;
   }
