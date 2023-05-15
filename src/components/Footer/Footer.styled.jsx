@@ -82,7 +82,7 @@ export const TEXT_P = styled.p`
   }
 `;
 export const IFRAME = styled.iframe`
-  width: 300px;
+  width: 270px;
   height: 300px;
   border-radius: 5px;
   margin: 10px 0;

@@ -52,7 +52,7 @@ export const IMG = styled.img`
   border-radius: 5px;
   object-fit: cover;
   margin: 5px;
-  width: 140px;
+  max-width: 140px;
   height: 110px;
   transition: all 0.3s ease 0s;
   @media screen and (min-width: 460px) {

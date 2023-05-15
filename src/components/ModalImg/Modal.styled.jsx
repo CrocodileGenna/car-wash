@@ -19,7 +19,11 @@ export const MODAL_DIV = styled.div`
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  min-width: 340px;
+  min-width: 270px;
+
+  @media screen and (min-width: 350px) {
+    min-width: 330px;
+  }
   @media screen and (min-width: 460px) {
     min-width: 440px;
   }

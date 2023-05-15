@@ -202,59 +202,82 @@ export const PHONE_P = styled.p`
     font-size: 25px;
   }
 `;
-
-// DOP_INFO_DIV
-export const DOP_INFO_DIV = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: auto ;
-  margin-top: 200px;
-  // @media screen and (min-width: 760px) {
-  //   margin: 65px auto;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   margin: 110px auto;
+// INPUT_DIV
+export const INPUT_DIV = styled.div`
+  p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
   }
-`;
-export const DOP_DOP_INFO_DIV = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-export const DOP_INFO_P = styled.p`
-  span {
-    font-weight: 100;
-    // font-size: 20px;
-    // @media screen and (min-width: 760px) {
-    //   font-size: 25px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //   font-size: 30px;
-    // }
-  }
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
-  margin: 0 0 10px 0;
+  top: 25%;
+  left: 40%;
   padding: 10px;
-  border-radius: 10px;
-  font-size: 12px;
+  border-radius: 5px;
+  max-width: 200px;
+  background-color: #ffffffc2;
+`;
+export const INPUT_INFO_DIV = styled.div`
+  max-width: 200px;
+`;
+export const INPUT_INFO_POSITION_DIV = styled.div`
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0 0 0;
+`;
+export const INPUT_INFO_LABEL = styled.label`
+  width: 15px;
+  margin: 0 3px 0 0;
+`;
+export const INPUT_INFO_IMG = styled.img`
+  width: 100%;
+`;
+export const INPUT_INFO_INPUT = styled.input`
+  padding: 0 0 0 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 22px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease 0s;
+  :hover,
+  :focus {
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+`;
+export const INPUT_INFO_BUTTON = styled.button`
+  margin: 7px 0 0 0;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 10px;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
   color: #fff;
-  background-color: #000000ba;
-  z-index: 9;
-  @media screen and (min-width: 760px) {
-    max-width: 500px;
-    font-size: 15px;
+  background-color: red;
+  transition: all 0.3s ease 0s;
+  :hover,
+  :focus {
+    // outline: 1px solid;
+    color: black;
+    background-color: #fff;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 17px;
-  }
+`;
+export const IFRAME = styled.iframe`
+  max-width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 24px 0 0 0;
 `;
 export const INFO_BUTTON = styled.button`
   display: flex;
+  margin: 130px auto;
   padding: 10px 25px;
   border: none;
   border-radius: 5px;
@@ -372,10 +395,53 @@ export const MODAL_INFO_P = styled.p`
     font-size: 17px;
   }
 `;
-export const IFRAME = styled.iframe`
-  width: 100%;
-  height: 100%;
-  border: 1px solid;
-  border-radius: 5px;
-  margin: 24px 0 0 0;
+// DOP_INFO_DIV
+export const DOP_INFO_DIV = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto ;
+  margin-top: 200px;
+  // @media screen and (min-width: 760px) {
+  //   margin: 65px auto;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin: 110px auto;
+  }
+`;
+export const DOP_DOP_INFO_DIV = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+export const DOP_INFO_P = styled.p`
+  span {
+    font-weight: 100;
+    // font-size: 20px;
+    // @media screen and (min-width: 760px) {
+    //   font-size: 25px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   font-size: 30px;
+    // }
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #000000ba;
+  z-index: 9;
+  @media screen and (min-width: 760px) {
+    max-width: 500px;
+    font-size: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 17px;
+  }
 `;

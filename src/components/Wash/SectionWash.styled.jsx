@@ -16,7 +16,7 @@ export const SECTION = styled.section`
 `;
 export const LOGO_1 = styled.img`
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 60%;
   border-radius: 5px;
   width: 100px;
@@ -207,7 +207,7 @@ export const IMG = styled.img`
   margin: 5px 0 15px 10px;
   border-radius: 5px;
   object-fit: cover;
-  width: 100px;
+  width: 87px;
   height: 100px;
   transition: all 0.3s ease 0s;
   :hover,
@@ -215,6 +215,9 @@ export const IMG = styled.img`
     cursor: pointer;
     transform: scale(1.01);
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.4);
+  }
+  @media screen and (min-width: 350px) {
+    width: 100px;
   }
   @media screen and (min-width: 460px) {
     margin: 10px 0 20px 30px;
