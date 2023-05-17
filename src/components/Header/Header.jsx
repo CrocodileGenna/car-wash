@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import Notiflix from 'notiflix';
+import { sendMessage } from 'components/telegramBot';
 import {
   HEADER,
   IMG_DIV,
@@ -8,7 +10,7 @@ import {
   TITLE_H1,
   PHONE,
   PHONE_P,
-  INPUT_DIV,
+  FORM,
   INPUT_INFO_DIV,
   INPUT_INFO_POSITION_DIV,
   INPUT_INFO_IMG,
@@ -41,8 +43,12 @@ export const Header = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [userName, setUserName] = useState('');
+  const [userPhone, setUserPhone] = useState('');
+  const formRef = useRef(null);
 
   const images = [fon_1, fon_2, fon_3, fon_4, fon_5];
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -54,19 +60,17 @@ export const Header = () => {
       );
       setPrevScrollPos(currentScrollPos);
     };
-
     window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos]);
-
-  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 5000);
 
-    return () => clearInterval(interval);
-  }, [setCurrentImageIndex, images.length]);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos, setCurrentImageIndex, images.length]);
+
   const backgroundImage = `url(${images[currentImageIndex]})`;
 
   if (openInfo === true) {
@@ -74,6 +78,26 @@ export const Header = () => {
   } else {
     document.body.style.overflow = 'visible';
   }
+
+  // submit
+
+  const considersUserName = e => {
+    setUserName(e.target.value);
+  };
+  const considersPhone = e => {
+    setUserPhone(e.target.value);
+  };
+
+  const sendValueInput = e => {
+    e.preventDefault();
+    if (userName === '' && userPhone === '') {
+      Notiflix.Notify.warning('Будь-ласка, заповніть всі поля.');
+      return;
+    }
+    sendMessage(userName, userPhone);
+
+    formRef.current.reset();
+  };
 
   return (
     <HEADER prop={{ backgroundImage }}>
@@ -97,25 +121,39 @@ export const Header = () => {
           </div>
         </TITLE_INFO_DIV>
       </TITLE_DIV>
-      <INPUT_DIV>
+      <FORM ref={formRef} onSubmit={sendValueInput}>
         <p>НАШ МЕНЕДЖEР ЗАТЕЛЕФОНУЄ ВАМ У НАЙБЛИЖЧИЙ ЧАС!</p>
         <INPUT_INFO_DIV>
           <INPUT_INFO_POSITION_DIV>
             <INPUT_INFO_LABEL htmlFor="name">
               <INPUT_INFO_IMG src={user} alt="user" />
             </INPUT_INFO_LABEL>
-            <INPUT_INFO_INPUT type="text" id="name" placeholder="Ім'я" />
+            <INPUT_INFO_INPUT
+              onChange={considersUserName}
+              type="text"
+              id="name"
+              placeholder="Ім'я"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ' ]{2,}"
+              required
+            />
           </INPUT_INFO_POSITION_DIV>
           <INPUT_INFO_POSITION_DIV>
             <INPUT_INFO_LABEL htmlFor="phone">
               <INPUT_INFO_IMG src={tel} alt="tel" />
             </INPUT_INFO_LABEL>
-            <INPUT_INFO_INPUT type="phone" id="email" placeholder="Телефон" />
+            <INPUT_INFO_INPUT
+              onChange={considersPhone}
+              type="phone"
+              id="email"
+              placeholder="Телефон"
+              pattern="[0-9]{10}"
+              required
+            />
           </INPUT_INFO_POSITION_DIV>
         </INPUT_INFO_DIV>
 
         <INPUT_INFO_BUTTON type="submit">Надіслати</INPUT_INFO_BUTTON>
-      </INPUT_DIV>
+      </FORM>
 
       <DOP_INFO_DIV>
         {/* <DOP_DOP_INFO_DIV>

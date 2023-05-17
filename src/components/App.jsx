@@ -1,18 +1,21 @@
 import { Header } from 'components/Header/Header';
 import { SectionWash } from './Wash/SectionWash';
+import { Parcing } from './Parcing/Parcing';
 import { Cleaner } from './Cleaner/Cleaner';
-import { Footer } from './Footer/Footer';
 import { CafeBar } from './CafeBar/CafeBar';
+
+import { Footer } from './Footer/Footer';
 import { Modal } from './ModalImg/Modal';
 import { UP_BUTTON, POSITION_DIV } from './App.styled';
-import arrow_top from './img/arrow-top-svgrepo-com.svg';
+import arrow_top from './image_App/arrow-top-svgrepo-com.svg';
 import { useEffect, useState } from 'react';
-import { Parcing } from './Parcing/Parcing';
+import { AfterFooterInput } from './AfterFooter/AfterFooterInput';
 
 export const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [img, setImg] = useState('');
   const [openImg, setOpenImg] = useState(false);
+  const [bodyOverflow, setBodyOverflow] = useState('visible');
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -35,15 +38,23 @@ export const App = () => {
   };
   const openImages = () => {
     setOpenImg(true);
+    setBodyOverflow('hidden');
   };
+
   const closeImages = () => {
     setOpenImg(false);
+    setBodyOverflow('visible');
   };
-  if (openImg === true) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'visible';
-  }
+
+  useEffect(() => {
+    document.body.style.overflow = bodyOverflow;
+  }, [bodyOverflow]);
+
+  // if (openImg === true) {
+  //   document.body.style.overflow = 'hidden';
+  // } else {
+  //   document.body.style.overflow = 'visible';
+  // }
 
   return (
     <>
@@ -54,6 +65,7 @@ export const App = () => {
         <Cleaner clickImg={clickImages} open={openImages} />
       </POSITION_DIV>
       <CafeBar clickImg={clickImages} open={openImages} />
+      <AfterFooterInput />
       <Footer />
       {isVisible && (
         <UP_BUTTON

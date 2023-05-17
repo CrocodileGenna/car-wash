@@ -203,7 +203,7 @@ export const PHONE_P = styled.p`
   }
 `;
 // INPUT_DIV
-export const INPUT_DIV = styled.div`
+export const FORM = styled.form`
   p {
     text-align: center;
     font-size: 8px;
@@ -322,7 +322,7 @@ export const INPUT_INFO_BUTTON = styled.button`
   }
   :hover,
   :focus {
-    // outline: 1px solid;
+    outline: 1px solid;
     color: black;
     background-color: #fff;
   }

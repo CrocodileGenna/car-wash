@@ -8,7 +8,6 @@ export const SECTION = styled.section`
   justify-content: flex-start;
   padding: 15px 15px 0 15px;
   color: black;
-  // background: #dddcdd;
   @media screen and (min-width: 760px) {
     padding: 40px 20px;
   }

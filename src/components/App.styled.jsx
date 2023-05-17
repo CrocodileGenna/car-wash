@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 export const POSITION_DIV = styled.div`
   display: block;
+  background-color: #dddcdd;
   @media screen and (min-width: 760px) {
     display: flex;
     justify-content: space-around;
