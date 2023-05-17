@@ -1,13 +1,17 @@
 {
   "files": {
     "main.css": "/car-wash/static/css/main.9d7c04d8.css",
-    "main.js": "/car-wash/static/js/main.cdaed0f7.js",
+    "main.js": "/car-wash/static/js/main.98d72737.js",
     "static/media/fon_4.jpg": "/car-wash/static/media/fon_4.68ed91130214e2fd7fef.jpg",
+    "static/media/cafe_1.jpg": "/car-wash/static/media/cafe_1.72f46cf9d1a3900b8377.jpg",
     "static/media/wash_4.jpg": "/car-wash/static/media/wash_4.56a2d7936bfae8aa958b.jpg",
+    "static/media/cafe_2.jpg": "/car-wash/static/media/cafe_2.01c65e044f2fc8f6511e.jpg",
+    "static/media/cafe_4.jpg": "/car-wash/static/media/cafe_4.bfc15af212677340c698.jpg",
     "static/media/wash_5.jpg": "/car-wash/static/media/wash_5.e857c2b49e8a7086d5fe.jpg",
     "static/media/wash_2.jpg": "/car-wash/static/media/wash_2.0706bfa6bbff06eaa283.jpg",
     "static/media/parking_1.jpg": "/car-wash/static/media/parking_1.08e943a8e9c66f3071b0.jpg",
     "static/media/wash_3.jpg": "/car-wash/static/media/wash_3.1c951748ec76ec7d3869.jpg",
+    "static/media/cafe_3.jpg": "/car-wash/static/media/cafe_3.0f1f600cf1dd1b8d13ca.jpg",
     "static/media/wash_1.jpg": "/car-wash/static/media/wash_1.68bb766e01c6496548a0.jpg",
     "static/media/wash_6.jpg": "/car-wash/static/media/wash_6.e002f819476a8167524c.jpg",
     "static/media/fon_2.jpg": "/car-wash/static/media/fon_2.ca1db8eab981d3e90d1d.jpg",
@@ -34,10 +38,10 @@
     "static/media/check-svgrepo-com.svg": "/car-wash/static/media/check-svgrepo-com.ed95c83727976f5d12b1e90c5c63cec5.svg",
     "static/media/phone-svgrepo-com-min.svg": "/car-wash/static/media/phone-svgrepo-com-min.757e56dd4682592d958f00d6dc870b9d.svg",
     "main.9d7c04d8.css.map": "/car-wash/static/css/main.9d7c04d8.css.map",
-    "main.cdaed0f7.js.map": "/car-wash/static/js/main.cdaed0f7.js.map"
+    "main.98d72737.js.map": "/car-wash/static/js/main.98d72737.js.map"
   },
   "entrypoints": [
     "static/css/main.9d7c04d8.css",
-    "static/js/main.cdaed0f7.js"
+    "static/js/main.98d72737.js"
   ]
 }
