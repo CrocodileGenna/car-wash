@@ -37,30 +37,33 @@ export const UL = styled.ul`
   width: 100%;
 `;
 export const LI = styled.li`
+  border-radius: 5px;
   margin: 10px;
   width: 130px;
+  max-height: 90px;
+  transition: all 0.3s ease 0s;
   @media screen and (min-width: 460px) {
     width: 170px;
+    max-height: 100px;
   }
   @media screen and (min-width: 760px) {
     width: 250px;
+    max-height: 150px;
   }
   @media screen and (min-width: 1200px) {
     width: 320px;
+    max-height: 200px;
+  }
+  :hover,
+  :focus {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.4);
   }
 `;
 export const IMG = styled.img`
   border-radius: 5px;
   width: 100%;
-  max-height: 90px;
+  height: 100%;
   object-fit: cover;
-  @media screen and (min-width: 460px) {
-    max-height: 100px;
-  }
-  @media screen and (min-width: 760px) {
-    max-height: 150px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-height: 200px;
-  }
 `;
