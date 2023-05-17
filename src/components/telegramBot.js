@@ -22,6 +22,7 @@ export const sendMessage = (name, tel) => {
         `Все пройшло успішно, чекайте на дзвінок від менеджера.`,
         {
           timeout: 5000,
+          position: 'left-bottom',
         }
       );
       return response.data;
