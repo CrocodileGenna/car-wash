@@ -167,7 +167,7 @@ export const PRICE_LI = styled.li`
   :hover,
   :focus {
     cursor: pointer;
-    transform: scale(1.04);
+    transform: scale(1.02);
     color: red;
     // border-bottom: 1px solid red;
   }
@@ -186,7 +186,6 @@ export const PRICE_NAME_P = styled.p`
   :hover,
   :focus {
     cursor: pointer;
-    // transform: scale(1.01);
     color: red;
     border-bottom: 1px solid red;
   }

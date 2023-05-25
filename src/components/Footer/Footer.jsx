@@ -44,7 +44,7 @@ export const Footer = () => {
             <IMG src={email} alt="email" />
             <div>
               <TITLE_P>Електронна пошта:</TITLE_P>
-              <TEXT_P>asdasd@asdas</TEXT_P>
+              <TEXT_P>avtomoikabumer@gmail.com</TEXT_P>
             </div>
           </INFO_LI>
           <INFO_LI>
