@@ -43,7 +43,7 @@ export const SectionWash = ({ clickImg, open }) => {
   };
   return (
     <>
-      <SECTION>
+      <SECTION id="my-anchor">
         <LOGO_1 src={logo} alt="logo" />
         <TITLE_TEXT_DIV>
           <TITLE_ICON_IMG src={svg_icon} alt="svg_icon" />
@@ -98,22 +98,22 @@ export const SectionWash = ({ clickImg, open }) => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_6} alt="wash_6" />
+          <IMG onClick={chengeImg} src={wash_6} alt="wash_BUMER_PVL_6" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_5} alt="wash_5" />
+          <IMG onClick={chengeImg} src={wash_5} alt="wash_BUMER_PVL_5" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_1} alt="wash_1" />
+          <IMG onClick={chengeImg} src={wash_1} alt="wash_BUMER_PVL_1" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_2} alt="wash_2" />
+          <IMG onClick={chengeImg} src={wash_2} alt="wash_BUMER_PVL_2" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_4} alt="wash_4" />
+          <IMG onClick={chengeImg} src={wash_4} alt="wash_BUMER_PVL_4" />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_3} alt="wash_3" />
+          <IMG onClick={chengeImg} src={wash_3} alt="wash_BUMER_PVL_3" />
         </SwiperSlide>
       </Swiper>
       <br />

@@ -39,7 +39,7 @@ export const Parcing = ({ clickImg, open }) => {
           <TITLE_ICON_IMG src={svg_icon} alt="svg_icon" />
         </TITLE_TEXT_DIV>
         <div>
-          <IMG onClick={chengeImg} src={parking_1} alt="car_1" />
+          <IMG onClick={chengeImg} src={parking_1} alt="car_BUMER_PVL_1" />
         </div>
       </SECTION>
     </>

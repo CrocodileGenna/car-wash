@@ -56,13 +56,13 @@ export const Footer = () => {
           </INFO_LI>
         </INFO_UL>
         <IFRAME
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1526.4167695934116!2d35.84117605652344!3d48.52673426017807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stranslate!5e0!3m2!1suk!2sua!4v1683456114716!5m2!1suk!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2642.3425550164607!2d35.837111804717296!3d48.52666659647833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40deb9d84c4ff99d%3A0x4f1918a815e58574!2z0J_QtdC90YHRltC50L3QuNC5INCk0L7QvdC0INCj0LrRgNCw0ZfQvdC4!5e0!3m2!1suk!2sua!4v1684190242401!5m2!1suk!2sua"
           title="map"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></IFRAME>
       </FOOTER_INFO_DIV>
-      <BOTTOM_INFO_P>Copyright © 2022. Усі права захищені</BOTTOM_INFO_P>
+      <BOTTOM_INFO_P>Copyright © 2023. Усі права захищені</BOTTOM_INFO_P>
     </FOOTER>
   );
 };

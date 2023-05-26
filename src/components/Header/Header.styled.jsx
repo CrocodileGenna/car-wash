@@ -163,9 +163,10 @@ export const TITLE_TEXT_DIV = styled.div`
   }
   flex-direction: column;
 `;
-export const TITLE_H1 = styled.h1`
+export const TITLE_H1 = styled.a`
   color: #fff;
   font-size: 30px;
+  font-weight: bold;
   @media screen and (min-width: 460px) {
     font-size: 35px;
   }

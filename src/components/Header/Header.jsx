@@ -111,8 +111,8 @@ export const Header = () => {
         <TITLE_INFO_DIV>
           <div>
             <TITLE_TEXT_DIV>
-              <TITLE_H1>BUMER</TITLE_H1>
-              <p>Без вихідних: 9⁰⁰-18⁰⁰. </p>
+              <TITLE_H1 href="#my-anchor">BUMER</TITLE_H1>
+              <p>Автомийка: 9⁰⁰-18⁰⁰. </p>
             </TITLE_TEXT_DIV>
           </div>
           <div>
@@ -187,6 +187,7 @@ export const Header = () => {
                 >
                   ✖
                 </CLOSE_BUTTON>
+
                 <IFRAME
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2642.3425550164607!2d35.837111804717296!3d48.52666659647833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40deb9d84c4ff99d%3A0x4f1918a815e58574!2z0J_QtdC90YHRltC50L3QuNC5INCk0L7QvdC0INCj0LrRgNCw0ZfQvdC4!5e0!3m2!1suk!2sua!4v1684190242401!5m2!1suk!2sua"
                   title="map"
@@ -198,6 +199,7 @@ export const Header = () => {
                   м.Павлоград, р-н ПШС, пр-к Шахтобудівників 5-А.
                   <br />
                   <span>( За Пенсійним Фондом )</span>
+                  <b>#BUMER_PVL</b>
                 </MODAL_INFO_P>
               </MODAL_DIV>
             </BACKDROP_DIV>

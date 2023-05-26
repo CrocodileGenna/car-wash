@@ -29,8 +29,8 @@ export const Cleaner = ({ clickImg, open }) => {
           </div>
         </TITLE_TEXT_DIV>
         <POSITION_IMG>
-          <IMG onClick={chengeImg} src={carpet_1} alt="carpet_1" />
-          <IMG onClick={chengeImg} src={carpet_2} alt="carpet_2" />
+          <IMG onClick={chengeImg} src={carpet_1} alt="carpet_BUMER_PVL_1" />
+          <IMG onClick={chengeImg} src={carpet_2} alt="carpet_BUMER_PVL_2" />
         </POSITION_IMG>
       </SECTION>
     </>
