@@ -111,8 +111,8 @@ export const Header = () => {
         <TITLE_INFO_DIV>
           <div>
             <TITLE_TEXT_DIV>
-              <TITLE_H1 href="#my-anchor">BUMER</TITLE_H1>
-              <p>Автомийка: 9⁰⁰-18⁰⁰. </p>
+              <TITLE_H1 href="#my-anchor">Автомийка БУМЕР</TITLE_H1>
+              <p>Графік роботи: 9⁰⁰-18⁰⁰. </p>
             </TITLE_TEXT_DIV>
           </div>
           <div>
