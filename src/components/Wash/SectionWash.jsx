@@ -71,19 +71,19 @@ export const SectionWash = ({ clickImg, open }) => {
 
           <PRICE_UL>
             <PRICE_LI>
-              <PRICE_PRICE_IMG src={check} alt="check" />
+              <PRICE_PRICE_IMG src={check} alt="павлоград автомийка бумер" />
               <PRICE_NAME_P>Безконтактне миття</PRICE_NAME_P>
             </PRICE_LI>
             <PRICE_LI>
-              <PRICE_PRICE_IMG src={check} alt="check" />
+              <PRICE_PRICE_IMG src={check} alt="павлоград автомийка бумер" />
               <PRICE_NAME_P>Контактне миття</PRICE_NAME_P>
             </PRICE_LI>
             <PRICE_LI>
-              <PRICE_PRICE_IMG src={check} alt="check" />
+              <PRICE_PRICE_IMG src={check} alt="павлоград автомийка бумер" />
               <PRICE_NAME_P>Ручне миття</PRICE_NAME_P>
             </PRICE_LI>
             <PRICE_LI>
-              <PRICE_PRICE_IMG src={check} alt="check" />
+              <PRICE_PRICE_IMG src={check} alt="павлоград автомийка бумер" />
               <PRICE_NAME_P>Суха автомийка</PRICE_NAME_P>
             </PRICE_LI>
           </PRICE_UL>
@@ -98,22 +98,46 @@ export const SectionWash = ({ clickImg, open }) => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_6} alt="wash_BUMER_PVL_6" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_6}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_5} alt="wash_BUMER_PVL_5" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_5}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_1} alt="wash_BUMER_PVL_1" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_1}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_2} alt="wash_BUMER_PVL_2" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_2}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_4} alt="wash_BUMER_PVL_4" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_4}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <IMG onClick={chengeImg} src={wash_3} alt="wash_BUMER_PVL_3" />
+          <IMG
+            onClick={chengeImg}
+            src={wash_3}
+            alt="павлоград автомийка бумер"
+          />
         </SwiperSlide>
       </Swiper>
       <br />

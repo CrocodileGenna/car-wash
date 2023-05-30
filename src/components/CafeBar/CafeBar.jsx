@@ -28,16 +28,32 @@ export const CafeBar = ({ clickImg, open }) => {
       </TITLE_TEXT_DIV>
       <UL>
         <LI>
-          <IMG onClick={chengeImg} src={cafe_1} alt="cafe_BUMER_PVL_1" />
+          <IMG
+            onClick={chengeImg}
+            src={cafe_1}
+            alt="павлоград кафе-бар бумер"
+          />
         </LI>
         <LI>
-          <IMG onClick={chengeImg} src={cafe_2} alt="cafe_BUMER_PVL_2" />
+          <IMG
+            onClick={chengeImg}
+            src={cafe_2}
+            alt="павлоград кафе-бар бумер"
+          />
         </LI>
         <LI>
-          <IMG onClick={chengeImg} src={cafe_3} alt="cafe_BUMER_PVL_3" />
+          <IMG
+            onClick={chengeImg}
+            src={cafe_3}
+            alt="павлоград кафе-бар бумер"
+          />
         </LI>
         <LI>
-          <IMG onClick={chengeImg} src={cafe_4} alt="cafe_BUMER_PVL_4" />
+          <IMG
+            onClick={chengeImg}
+            src={cafe_4}
+            alt="павлоград кафе-бар бумер"
+          />
         </LI>
       </UL>
     </SECTION>
